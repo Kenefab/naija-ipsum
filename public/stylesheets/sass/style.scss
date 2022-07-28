@@ -1,0 +1,176 @@
+//colors
+$fair-green: #559c4f;
+$pure-white: #fff;
+$border-white: #e8e8e8;
+$paragraph-text: #efefef;
+$paragraph-border: #888888;
+$text-color: #292d32;
+$text-header-green: #3bb431;
+
+//fonts
+$nav-font: "IM FELL DW Pica";
+$PGdiv-font: "Poppins", sans-serif;
+
+//mixins
+@mixin PGdiv {
+  position: absolute;
+  top: 400px;
+}
+
+@mixin border-marginTop {
+  border-radius: 100px;
+  border: 1px solid $border-white;
+  margin-top: 10px;
+}
+
+@mixin navbar {
+  font-style: normal;
+  font-family: $nav-font;
+  font-weight: 400;
+  font-size: 91px;
+  line-height: 114px;
+}
+
+@mixin typeDiv {
+  position: absolute;
+  top: 500px;
+}
+
+/** base styles **/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#parent {
+  position: relative;
+  #child {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/** navbar styling **/
+#nav {
+  position: relative;
+}
+
+#flag {
+  position: absolute;
+  width: 832px;
+  height: 394px;
+  left: -70px;
+  top: -3px;
+  opacity: 0.86;
+}
+
+#naija {
+  position: absolute;
+  width: 215px;
+  height: 116px;
+  left: 690px;
+  top: 64px;
+  @include navbar();
+  color: $fair-green;
+}
+
+#ipsum {
+  position: absolute;
+  width: 249px;
+  height: 116px;
+  left: 745px;
+  top: 155px;
+  @include navbar();
+  color: $fair-green;
+}
+/** end of navbar styling **/
+
+/** PGdiv styling **/
+#PGdiv {
+  position: relative;
+
+  #paragraphLabel {
+    @include border-marginTop();
+    @include PGdiv();
+    position: relative;
+    right: 15%;
+    padding: 0px 30px 0px 100px;
+    background: $pure-white;
+
+    .icons {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 5px;
+      left: 70px;
+    }
+    #paragraphText {
+      width: 123px;
+      font-family: $PGdiv-font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 35px;
+      color: $text-color;
+    }
+  }
+
+  #numOfParagraphs {
+    @include PGdiv();
+    color: $text-color;
+    right: 44%;
+    background: $paragraph-text;
+    border: 1px solid $paragraph-border;
+    border-radius: 100px;
+    font-family: $PGdiv-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    padding: 10px 10px 10px 30px;
+    width: 550px;
+
+    // &:active {
+    //   background: $paragraph-text;
+    //   border: 1px solid $paragraph-border;
+    // }
+  }
+
+  #generateBtn {
+    @include PGdiv();
+    @include border-marginTop();
+    left: 59%;
+    background: $text-header-green;
+    width: 230px;
+    height: 35px;
+    text-align: center;
+    font-family: $PGdiv-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    padding: 0px 35px 0px 35px;
+  }
+}
+/** end of PGdiv styling **/
+
+#typeDiv {
+  position: relative;
+
+  #typeText {
+    @include typeDiv();
+  }
+
+  #pidginLabel {
+    @include typeDiv();
+    right: 80%;
+  }
+  #pidginRadioBtn {
+    @include typeDiv();
+    right: 75%;
+  }
+}

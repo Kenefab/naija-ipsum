@@ -1,0 +1,14 @@
+{
+  "name": "naija-ipsum",
+  "version": "1.0.0",
+  "description": "lorem ipsum based on nigerian pidgin english.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kene Fab-Ukozor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

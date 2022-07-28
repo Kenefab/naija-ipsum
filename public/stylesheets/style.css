@@ -1,0 +1,147 @@
+/** base styles **/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#parent {
+  position: relative;
+}
+#parent #child {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** navbar styling **/
+#nav {
+  position: relative;
+}
+
+#flag {
+  position: absolute;
+  width: 832px;
+  height: 394px;
+  left: -70px;
+  top: -3px;
+  opacity: 0.86;
+}
+
+#naija {
+  position: absolute;
+  width: 215px;
+  height: 116px;
+  left: 690px;
+  top: 64px;
+  font-style: normal;
+  font-family: "IM FELL DW Pica";
+  font-weight: 400;
+  font-size: 91px;
+  line-height: 114px;
+  color: #559c4f;
+}
+
+#ipsum {
+  position: absolute;
+  width: 249px;
+  height: 116px;
+  left: 745px;
+  top: 155px;
+  font-style: normal;
+  font-family: "IM FELL DW Pica";
+  font-weight: 400;
+  font-size: 91px;
+  line-height: 114px;
+  color: #559c4f;
+}
+
+/** end of navbar styling **/
+/** PGdiv styling **/
+#PGdiv {
+  position: relative;
+}
+#PGdiv #paragraphLabel {
+  border-radius: 100px;
+  border: 1px solid #e8e8e8;
+  margin-top: 10px;
+  position: absolute;
+  top: 400px;
+  position: relative;
+  right: 15%;
+  padding: 0px 30px 0px 100px;
+  background: #fff;
+}
+#PGdiv #paragraphLabel .icons {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  left: 70px;
+}
+#PGdiv #paragraphLabel #paragraphText {
+  width: 123px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  color: #292d32;
+}
+#PGdiv #numOfParagraphs {
+  position: absolute;
+  top: 400px;
+  color: #292d32;
+  right: 44%;
+  background: #efefef;
+  border: 1px solid #888888;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  padding: 10px 10px 10px 30px;
+  width: 550px;
+}
+#PGdiv #generateBtn {
+  position: absolute;
+  top: 400px;
+  border-radius: 100px;
+  border: 1px solid #e8e8e8;
+  margin-top: 10px;
+  left: 59%;
+  background: #3bb431;
+  width: 230px;
+  height: 35px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  padding: 0px 35px 0px 35px;
+}
+
+/** end of PGdiv styling **/
+#typeDiv {
+  position: relative;
+}
+#typeDiv #typeText {
+  position: absolute;
+  top: 500px;
+}
+#typeDiv #pidginLabel {
+  position: absolute;
+  top: 500px;
+  right: 80%;
+}
+#typeDiv #pidginRadioBtn {
+  position: absolute;
+  top: 500px;
+  right: 75%;
+}
+
+/*# sourceMappingURL=style.css.map */

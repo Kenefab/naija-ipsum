@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naija Ipsum</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7596021f26.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header" id="parent">
+      <div id="child">
+        <header>
+          <div class="menu-bar">
+            <div
+              class="navbar navbar-expand-lg navbar-light navbar-fixed-top container"
+              id="nav"
+            >
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./images/image-from-rawpixel-id-7009713-original 1.png"
+                  alt=""
+                  id="flag"
+                />
+                <img src="./images/Naija.png" alt="Naija" id="naija" />
+                <img src="./images/Ipsum.png" alt="Ipsum" id="ipsum" />
+              </a>
+            </div>
+            <!-- end of navbar div -->
+          </div>
+          <!-- end of menu-bar div -->
+        </header>
+        <!-- end of header element -->
+
+        <!-- start of PG div -->
+        <div id="PGdiv" class="container">
+          <form action="">
+            <label for="paragraph" id="paragraphLabel"
+              ><span id="paragraphText">
+                <img
+                  src="./images/message-edit.svg"
+                  alt=""
+                  class="icons"
+                />Paragraphs:</span
+              ></label
+            >
+            <input type="number" name="numOfParagraphs" id="numOfParagraphs" />
+            <input type="submit" value="Generate" id="generateBtn" />
+          </form>
+        </div>
+        <!-- end of PG div -->
+
+        <!-- start of type div -->
+        <div id="typeDiv" class="container">
+          <form action="">
+            <p id="typeText">Type:</p>
+            <div id="pidginDiv">
+              <label for="pidgin" id="pidginLabel">Pidgin</label>
+              <input type="radio" name="pidgin" id="pidginRadioBtn" />
+            </div>
+            <div id="amala-eweduDiv">
+              <label for="AmalaEwedu" id="amala-eweduLabel">Amala&Ewedu</label>
+              <input type="radio" name="AmalaEwedu" id="amala-eweduRadioBtn" />
+            </div>
+          </form>
+        </div>
+        <!-- end of type div -->
+
+        <!-- start of generated-text div -->
+        <!-- <div class="generated-text" id="targetText">
+          <div class="placeholder-div"></div>
+        </div> -->
+        <!-- end of generated-text div -->
+      </div>
+      <!-- end of child div -->
+    </div>
+    <!-- end of parent div -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
