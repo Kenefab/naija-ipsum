@@ -6,6 +6,8 @@ $paragraph-text: #efefef;
 $paragraph-border: #888888;
 $text-color: #292d32;
 $text-header-green: #3bb431;
+$radio-border: #6b6b6b;
+$radio-accent: #3bb431;
 
 //fonts
 $nav-font: "IM FELL DW Pica";
@@ -17,10 +19,14 @@ $PGdiv-font: "Poppins", sans-serif;
   top: 400px;
 }
 
-@mixin border-marginTop {
+@mixin border {
   border-radius: 100px;
   border: 1px solid $border-white;
+}
+
+@mixin margin {
   margin-top: 10px;
+  margin-right: 10px;
 }
 
 @mixin navbar {
@@ -31,9 +37,46 @@ $PGdiv-font: "Poppins", sans-serif;
   line-height: 114px;
 }
 
-@mixin typeDiv {
+@mixin typeDiv($margin-top) {
   position: absolute;
-  top: 500px;
+  top: 400px;
+  margin-top: $margin-top;
+}
+
+@mixin padding-bg {
+  padding: 0px 30px 0px 100px;
+  background: $pure-white;
+}
+
+@mixin font-block($line-height) {
+  font-family: $PGdiv-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: $line-height;
+}
+
+@mixin icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  left: 70px;
+}
+
+@mixin pidgin-amala-label($width) {
+  background: $paragraph-text;
+  border: 1px solid $paragraph-border;
+  border-radius: 100px;
+  padding: 10px 30px 10px 30px;
+  margin-right: -105px;
+  width: $width;
+}
+
+@mixin pidgin-acthov {
+  color: $radio-accent;
+  accent-color: $radio-accent;
+  border: 1px solid $radio-border;
 }
 
 /** base styles **/
@@ -94,43 +137,31 @@ $PGdiv-font: "Poppins", sans-serif;
   position: relative;
 
   #paragraphLabel {
-    @include border-marginTop();
+    @include border();
+    @include margin();
     @include PGdiv();
+    @include padding-bg();
     position: relative;
     right: 15%;
-    padding: 0px 30px 0px 100px;
-    background: $pure-white;
 
     .icons {
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      top: 5px;
-      left: 70px;
+      @include icon();
     }
     #paragraphText {
+      @include font-block(35px);
       width: 123px;
-      font-family: $PGdiv-font;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 35px;
       color: $text-color;
     }
   }
 
   #numOfParagraphs {
     @include PGdiv();
+    @include font-block(35px);
     color: $text-color;
     right: 44%;
     background: $paragraph-text;
     border: 1px solid $paragraph-border;
     border-radius: 100px;
-    font-family: $PGdiv-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 35px;
     padding: 10px 10px 10px 30px;
     width: 550px;
 
@@ -142,17 +173,14 @@ $PGdiv-font: "Poppins", sans-serif;
 
   #generateBtn {
     @include PGdiv();
-    @include border-marginTop();
+    @include border();
+    @include margin();
+    @include font-block(35px);
     left: 59%;
     background: $text-header-green;
     width: 230px;
     height: 35px;
     text-align: center;
-    font-family: $PGdiv-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 35px;
     padding: 0px 35px 0px 35px;
   }
 }
@@ -161,16 +189,66 @@ $PGdiv-font: "Poppins", sans-serif;
 #typeDiv {
   position: relative;
 
-  #typeText {
-    @include typeDiv();
+  #typeDivInner {
+    @include typeDiv(100px);
+    @include padding-bg();
+    @include border();
+    margin-right: 10px;
+    right: 92.5%;
+    width: 228px;
+
+    #typeText {
+      @include font-block(35px);
+      color: $text-color;
+    }
+    .icons {
+      @include icon();
+    }
   }
 
   #pidginLabel {
-    @include typeDiv();
-    right: 80%;
+    @include typeDiv(100px);
+    @include font-block(16px);
+    @include pidgin-amala-label(260px);
+    right: 79%;
   }
   #pidginRadioBtn {
-    @include typeDiv();
-    right: 75%;
+    @include typeDiv(110px);
+    right: 72%;
+    background: $pure-white;
+    border: 1px solid $radio-border;
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: green;
+    &:hover {
+      @include pidgin-acthov();
+    }
+    &:active {
+      @include pidgin-acthov();
+    }
+  }
+
+  #amala-eweduLabel {
+    @include typeDiv(100px);
+    @include typeDiv(100px);
+    @include font-block(16px);
+    @include pidgin-amala-label(260px);
+    left: 32%;
+  }
+
+  #amala-eweduRadioBtn {
+    @include typeDiv(110px);
+    left: 51%;
+    background: $pure-white;
+    border: 1px solid $radio-border;
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: green;
+    &:hover {
+      @include pidgin-acthov();
+    }
+    &:active {
+      @include pidgin-acthov();
+    }
   }
 }

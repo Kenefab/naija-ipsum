@@ -54,12 +54,13 @@
             <label for="paragraph" id="paragraphLabel"
               ><span id="paragraphText">
                 <img
-                  src="./images/message-edit.svg"
-                  alt=""
+                  src="./icons/message-edit.svg"
+                  alt="paragraph-icon"
                   class="icons"
-                />Paragraphs:</span
-              ></label
-            >
+                />
+                Paragraphs:
+              </span>
+            </label>
             <input type="number" name="numOfParagraphs" id="numOfParagraphs" />
             <input type="submit" value="Generate" id="generateBtn" />
           </form>
@@ -69,8 +70,13 @@
         <!-- start of type div -->
         <div id="typeDiv" class="container">
           <form action="">
-            <p id="typeText">Type:</p>
             <div id="pidginDiv">
+              <div id="typeDivInner">
+                <span id="typeText">
+                  <img src="./icons/task.svg" alt="type-icon" class="icons" />
+                  Type:
+                </span>
+              </div>
               <label for="pidgin" id="pidginLabel">Pidgin</label>
               <input type="radio" name="pidgin" id="pidginRadioBtn" />
             </div>
@@ -79,6 +85,7 @@
               <input type="radio" name="AmalaEwedu" id="amala-eweduRadioBtn" />
             </div>
           </form>
+          <div id="homeImg"></div>
         </div>
         <!-- end of type div -->
 

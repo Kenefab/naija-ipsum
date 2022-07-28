@@ -67,12 +67,13 @@
   border-radius: 100px;
   border: 1px solid #e8e8e8;
   margin-top: 10px;
+  margin-right: 10px;
   position: absolute;
   top: 400px;
-  position: relative;
-  right: 15%;
   padding: 0px 30px 0px 100px;
   background: #fff;
+  position: relative;
+  right: 15%;
 }
 #PGdiv #paragraphLabel .icons {
   position: absolute;
@@ -82,27 +83,27 @@
   left: 70px;
 }
 #PGdiv #paragraphLabel #paragraphText {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
   width: 123px;
+  color: #292d32;
+}
+#PGdiv #numOfParagraphs {
+  position: absolute;
+  top: 400px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 35px;
   color: #292d32;
-}
-#PGdiv #numOfParagraphs {
-  position: absolute;
-  top: 400px;
-  color: #292d32;
   right: 44%;
   background: #efefef;
   border: 1px solid #888888;
   border-radius: 100px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 35px;
   padding: 10px 10px 10px 30px;
   width: 550px;
 }
@@ -112,16 +113,17 @@
   border-radius: 100px;
   border: 1px solid #e8e8e8;
   margin-top: 10px;
-  left: 59%;
-  background: #3bb431;
-  width: 230px;
-  height: 35px;
-  text-align: center;
+  margin-right: 10px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 35px;
+  left: 59%;
+  background: #3bb431;
+  width: 230px;
+  height: 35px;
+  text-align: center;
   padding: 0px 35px 0px 35px;
 }
 
@@ -129,19 +131,111 @@
 #typeDiv {
   position: relative;
 }
-#typeDiv #typeText {
+#typeDiv #typeDivInner {
   position: absolute;
-  top: 500px;
+  top: 400px;
+  margin-top: 100px;
+  padding: 0px 30px 0px 100px;
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid #e8e8e8;
+  margin-right: 10px;
+  right: 92.5%;
+  width: 228px;
+}
+#typeDiv #typeDivInner #typeText {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  color: #292d32;
+}
+#typeDiv #typeDivInner .icons {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  left: 70px;
 }
 #typeDiv #pidginLabel {
   position: absolute;
-  top: 500px;
-  right: 80%;
+  top: 400px;
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  background: #efefef;
+  border: 1px solid #888888;
+  border-radius: 100px;
+  padding: 10px 30px 10px 30px;
+  margin-right: -105px;
+  width: 260px;
+  right: 79%;
 }
 #typeDiv #pidginRadioBtn {
   position: absolute;
-  top: 500px;
-  right: 75%;
+  top: 400px;
+  margin-top: 110px;
+  right: 72%;
+  background: #fff;
+  border: 1px solid #6b6b6b;
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: green;
+}
+#typeDiv #pidginRadioBtn:hover {
+  color: #3bb431;
+  accent-color: #3bb431;
+  border: 1px solid #6b6b6b;
+}
+#typeDiv #pidginRadioBtn:active {
+  color: #3bb431;
+  accent-color: #3bb431;
+  border: 1px solid #6b6b6b;
+}
+#typeDiv #amala-eweduLabel {
+  position: absolute;
+  top: 400px;
+  margin-top: 100px;
+  position: absolute;
+  top: 400px;
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  background: #efefef;
+  border: 1px solid #888888;
+  border-radius: 100px;
+  padding: 10px 30px 10px 30px;
+  margin-right: -105px;
+  width: 260px;
+  left: 32%;
+}
+#typeDiv #amala-eweduRadioBtn {
+  position: absolute;
+  top: 400px;
+  margin-top: 110px;
+  left: 51%;
+  background: #fff;
+  border: 1px solid #6b6b6b;
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: green;
+}
+#typeDiv #amala-eweduRadioBtn:hover {
+  color: #3bb431;
+  accent-color: #3bb431;
+  border: 1px solid #6b6b6b;
+}
+#typeDiv #amala-eweduRadioBtn:active {
+  color: #3bb431;
+  accent-color: #3bb431;
+  border: 1px solid #6b6b6b;
 }
 
 /*# sourceMappingURL=style.css.map */
