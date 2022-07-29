@@ -16,6 +16,7 @@
   margin-right: auto;
 }
 
+/** end of base styles **/
 /** navbar styling **/
 #nav {
   position: relative;
@@ -126,15 +127,24 @@
   text-align: center;
   padding: 0px 35px 0px 35px;
 }
+#PGdiv #homeImg {
+  position: absolute;
+  width: 717px;
+  height: 511px;
+  left: 50%;
+  top: 457px;
+  background: url(../images/undraw_Programming_re_kg9v\ 1.png);
+}
 
 /** end of PGdiv styling **/
+/** typeDiv styling **/
 #typeDiv {
   position: relative;
 }
 #typeDiv #typeDivInner {
   position: absolute;
   top: 400px;
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 0px 30px 0px 100px;
   background: #fff;
   border-radius: 100px;
@@ -161,7 +171,7 @@
 #typeDiv #pidginLabel {
   position: absolute;
   top: 400px;
-  margin-top: 100px;
+  margin-top: 60px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -178,7 +188,7 @@
 #typeDiv #pidginRadioBtn {
   position: absolute;
   top: 400px;
-  margin-top: 110px;
+  margin-top: 70px;
   right: 72%;
   background: #fff;
   border: 1px solid #6b6b6b;
@@ -199,10 +209,7 @@
 #typeDiv #amala-eweduLabel {
   position: absolute;
   top: 400px;
-  margin-top: 100px;
-  position: absolute;
-  top: 400px;
-  margin-top: 100px;
+  margin-top: 60px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -219,7 +226,7 @@
 #typeDiv #amala-eweduRadioBtn {
   position: absolute;
   top: 400px;
-  margin-top: 110px;
+  margin-top: 70px;
   left: 51%;
   background: #fff;
   border: 1px solid #6b6b6b;
@@ -236,6 +243,97 @@
   color: #3bb431;
   accent-color: #3bb431;
   border: 1px solid #6b6b6b;
+}
+
+/** end of typeDiv styling **/
+/** targetText styling **/
+#targetText {
+  position: relative;
+}
+#targetText #placeholder-container {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  top: 400px;
+  margin-top: 100px;
+  margin-left: -165px;
+  width: 75%;
+  padding: 20px 5% 20px 0;
+}
+#targetText #placeholder-container .placeholder-div {
+  margin-top: 20px;
+}
+
+/** end of targetText styling **/
+/** section1 styling **/
+.section-container {
+  position: relative;
+}
+.section-container .section1 {
+  position: absolute;
+  top: 400px;
+  margin-top: 430px;
+  margin-left: -165px;
+  width: 100%;
+  padding: 20px 0;
+}
+.section-container .section1 h1 {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3bb431;
+}
+.section-container .section1 p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.section-container .section2 {
+  position: absolute;
+  top: 400px;
+  margin-top: 740px;
+  margin-left: -165px;
+  width: 100%;
+  padding: 20px 0;
+}
+.section-container .section2 h1 {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3bb431;
+}
+.section-container .section2 p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+/** end of section1 styling **/
+.footer {
+  position: relative;
+}
+.footer footer {
+  position: absolute;
+  top: 400px;
+  margin-top: 1100px;
+  background: #3bb431;
+  width: 100%;
+  height: 212px;
 }
 
 /*# sourceMappingURL=style.css.map */

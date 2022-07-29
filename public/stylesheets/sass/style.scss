@@ -7,12 +7,12 @@ $paragraph-border: #888888;
 $text-color: #292d32;
 $text-header-green: #3bb431;
 $radio-border: #6b6b6b;
-$radio-accent: #3bb431;
 
+//////////////////////////////
 //fonts
 $nav-font: "IM FELL DW Pica";
 $PGdiv-font: "Poppins", sans-serif;
-
+////////////////////////////
 //mixins
 @mixin PGdiv {
   position: absolute;
@@ -48,11 +48,11 @@ $PGdiv-font: "Poppins", sans-serif;
   background: $pure-white;
 }
 
-@mixin font-block($line-height) {
+@mixin font-block($line-height, $font-size, $font-weight) {
   font-family: $PGdiv-font;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: $font-weight;
+  font-size: $font-size;
   line-height: $line-height;
 }
 
@@ -74,11 +74,11 @@ $PGdiv-font: "Poppins", sans-serif;
 }
 
 @mixin pidgin-acthov {
-  color: $radio-accent;
-  accent-color: $radio-accent;
+  color: $text-header-green;
+  accent-color: $text-header-green;
   border: 1px solid $radio-border;
 }
-
+///////////////////////////////////////
 /** base styles **/
 * {
   margin: 0px;
@@ -96,7 +96,8 @@ $PGdiv-font: "Poppins", sans-serif;
     margin-right: auto;
   }
 }
-
+/** end of base styles **/
+////////////////////////////////////
 /** navbar styling **/
 #nav {
   position: relative;
@@ -131,7 +132,7 @@ $PGdiv-font: "Poppins", sans-serif;
   color: $fair-green;
 }
 /** end of navbar styling **/
-
+///////////////////////////////////////////////////
 /** PGdiv styling **/
 #PGdiv {
   position: relative;
@@ -148,7 +149,7 @@ $PGdiv-font: "Poppins", sans-serif;
       @include icon();
     }
     #paragraphText {
-      @include font-block(35px);
+      @include font-block(35px, 16px, 500);
       width: 123px;
       color: $text-color;
     }
@@ -156,7 +157,7 @@ $PGdiv-font: "Poppins", sans-serif;
 
   #numOfParagraphs {
     @include PGdiv();
-    @include font-block(35px);
+    @include font-block(35px, 16px, 500);
     color: $text-color;
     right: 44%;
     background: $paragraph-text;
@@ -175,7 +176,7 @@ $PGdiv-font: "Poppins", sans-serif;
     @include PGdiv();
     @include border();
     @include margin();
-    @include font-block(35px);
+    @include font-block(35px, 16px, 500);
     left: 59%;
     background: $text-header-green;
     width: 230px;
@@ -183,14 +184,23 @@ $PGdiv-font: "Poppins", sans-serif;
     text-align: center;
     padding: 0px 35px 0px 35px;
   }
+  #homeImg {
+    position: absolute;
+    width: 717px;
+    height: 511px;
+    left: 50%;
+    top: 457px;
+    background: url(../images/undraw_Programming_re_kg9v\ 1.png);
+  }
 }
 /** end of PGdiv styling **/
-
+/////////////////////////////////////////
+/** typeDiv styling **/
 #typeDiv {
   position: relative;
 
   #typeDivInner {
-    @include typeDiv(100px);
+    @include typeDiv(60px);
     @include padding-bg();
     @include border();
     margin-right: 10px;
@@ -198,7 +208,7 @@ $PGdiv-font: "Poppins", sans-serif;
     width: 228px;
 
     #typeText {
-      @include font-block(35px);
+      @include font-block(35px, 16px, 500);
       color: $text-color;
     }
     .icons {
@@ -207,13 +217,13 @@ $PGdiv-font: "Poppins", sans-serif;
   }
 
   #pidginLabel {
-    @include typeDiv(100px);
-    @include font-block(16px);
+    @include typeDiv(60px);
+    @include font-block(16px, 16px, 500);
     @include pidgin-amala-label(260px);
     right: 79%;
   }
   #pidginRadioBtn {
-    @include typeDiv(110px);
+    @include typeDiv(70px);
     right: 72%;
     background: $pure-white;
     border: 1px solid $radio-border;
@@ -229,15 +239,14 @@ $PGdiv-font: "Poppins", sans-serif;
   }
 
   #amala-eweduLabel {
-    @include typeDiv(100px);
-    @include typeDiv(100px);
-    @include font-block(16px);
+    @include typeDiv(60px);
+    @include font-block(16px, 16px, 500);
     @include pidgin-amala-label(260px);
     left: 32%;
   }
 
   #amala-eweduRadioBtn {
-    @include typeDiv(110px);
+    @include typeDiv(70px);
     left: 51%;
     background: $pure-white;
     border: 1px solid $radio-border;
@@ -250,5 +259,75 @@ $PGdiv-font: "Poppins", sans-serif;
     &:active {
       @include pidgin-acthov();
     }
+  }
+}
+/** end of typeDiv styling **/
+/////////////////////////////////////////////
+/** targetText styling **/
+#targetText {
+  position: relative;
+
+  #placeholder-container {
+    @include font-block(24px, 16px, 400);
+    @include typeDiv(100px);
+    margin-left: -165px;
+    width: 75%;
+    padding: 20px 5% 20px 0;
+    .placeholder-div {
+      margin-top: 20px;
+    }
+  }
+}
+/** end of targetText styling **/
+///////////////////////////////////////
+/** section1 styling **/
+.section-container {
+  position: relative;
+
+  .section1 {
+    @include typeDiv(430px);
+    margin-left: -165px;
+    width: 100%;
+
+    padding: 20px 0;
+
+    h1 {
+      margin-bottom: 20px;
+      @include font-block(48px, 40px, 700);
+      color: $text-header-green;
+    }
+    p {
+      @include font-block(25px, 21px, 400);
+      margin-bottom: 30px;
+    }
+  }
+
+  .section2 {
+    @include typeDiv(740px);
+    margin-left: -165px;
+    width: 100%;
+
+    padding: 20px 0;
+
+    h1 {
+      margin-bottom: 20px;
+      @include font-block(48px, 40px, 700);
+      color: $text-header-green;
+    }
+    p {
+      @include font-block(25px, 21px, 400);
+      margin-bottom: 30px;
+    }
+  }
+}
+/** end of section1 styling **/
+///////////////////////////////////////
+.footer {
+  position: relative;
+  footer {
+    @include typeDiv(1100px);
+    background: $text-header-green;
+    width: 100%;
+    height: 212px;
   }
 }
