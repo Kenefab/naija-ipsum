@@ -1,4 +1,4 @@
-/** base styles **/
+/************************************************* base styles ***************************************/
 * {
   margin: 0px;
   padding: 0px;
@@ -17,7 +17,7 @@
 }
 
 /** end of base styles **/
-/** navbar styling **/
+/*************************************** navbar styling *******************************************/
 #nav {
   position: relative;
 }
@@ -60,7 +60,7 @@
 }
 
 /** end of navbar styling **/
-/** PGdiv styling **/
+/******************************************************* PGdiv styling *****************************************/
 #PGdiv {
   position: relative;
 }
@@ -137,7 +137,7 @@
 }
 
 /** end of PGdiv styling **/
-/** typeDiv styling **/
+/************************************************** typeDiv styling ************************************88***/
 #typeDiv {
   position: relative;
 }
@@ -246,7 +246,7 @@
 }
 
 /** end of typeDiv styling **/
-/** targetText styling **/
+/**************************************************** targetText styling *********************************************/
 #targetText {
   position: relative;
 }
@@ -268,7 +268,7 @@
 }
 
 /** end of targetText styling **/
-/** section1 styling **/
+/*********************************************** section1 styling *****************************************************/
 .section-container {
   position: relative;
 }
@@ -324,7 +324,7 @@
 }
 
 /** end of section1 styling **/
-/** footer styling **/
+/*********************************************** footer styling *********************************************/
 .footer {
   position: relative;
 }
@@ -347,7 +347,15 @@
 }
 .footer footer .col-sm-6 p {
   margin-top: 50px;
-  margin-left: 25%;
+  margin-left: 125px;
+  padding-left: 12%;
+}
+@media screen and (min-width: 992px) {
+  .footer footer .col-sm-6 p {
+    margin-top: 50px;
+    margin-left: 30%;
+    padding-left: 12%;
+  }
 }
 .footer footer .col-sm-6 .col-sm-12 {
   font-family: "Poppins", sans-serif;

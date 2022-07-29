@@ -1,4 +1,6 @@
-//colors
+/***************************************************** Sammy use the SASS stylesheet. Don't style on the css. Read README file. ****************************************************/
+
+/////////////////////////////////////////////////////colors
 $fair-green: #559c4f;
 $pure-white: #fff;
 $border-white: #e8e8e8;
@@ -8,12 +10,12 @@ $text-color: #292d32;
 $text-header-green: #3bb431;
 $radio-border: #6b6b6b;
 
-//////////////////////////////
-//fonts
+////////////////////////////////
+/////////////////////////////////////////////////////fonts
 $nav-font: "IM FELL DW Pica";
 $PGdiv-font: "Poppins", sans-serif;
 ////////////////////////////
-//mixins
+/////////////////////////////////////////////////////mixins
 @mixin PGdiv {
   position: absolute;
   top: 400px;
@@ -79,7 +81,7 @@ $PGdiv-font: "Poppins", sans-serif;
   border: 1px solid $radio-border;
 }
 ///////////////////////////////////////
-/** base styles **/
+/************************************************* base styles ***************************************/
 * {
   margin: 0px;
   padding: 0px;
@@ -98,7 +100,7 @@ $PGdiv-font: "Poppins", sans-serif;
 }
 /** end of base styles **/
 ////////////////////////////////////
-/** navbar styling **/
+/*************************************** navbar styling *******************************************/
 #nav {
   position: relative;
 }
@@ -133,7 +135,7 @@ $PGdiv-font: "Poppins", sans-serif;
 }
 /** end of navbar styling **/
 ///////////////////////////////////////////////////
-/** PGdiv styling **/
+/******************************************************* PGdiv styling *****************************************/
 #PGdiv {
   position: relative;
 
@@ -195,7 +197,7 @@ $PGdiv-font: "Poppins", sans-serif;
 }
 /** end of PGdiv styling **/
 /////////////////////////////////////////
-/** typeDiv styling **/
+/************************************************** typeDiv styling ************************************88***/
 #typeDiv {
   position: relative;
 
@@ -263,7 +265,7 @@ $PGdiv-font: "Poppins", sans-serif;
 }
 /** end of typeDiv styling **/
 /////////////////////////////////////////////
-/** targetText styling **/
+/**************************************************** targetText styling *********************************************/
 #targetText {
   position: relative;
 
@@ -280,7 +282,7 @@ $PGdiv-font: "Poppins", sans-serif;
 }
 /** end of targetText styling **/
 ///////////////////////////////////////
-/** section1 styling **/
+/*********************************************** section1 styling *****************************************************/
 .section-container {
   position: relative;
 
@@ -288,7 +290,6 @@ $PGdiv-font: "Poppins", sans-serif;
     @include typeDiv(430px);
     margin-left: -165px;
     width: 100%;
-
     padding: 20px 0;
 
     h1 {
@@ -322,7 +323,7 @@ $PGdiv-font: "Poppins", sans-serif;
 }
 /** end of section1 styling **/
 ///////////////////////////////////////
-/** footer styling **/
+/*********************************************** footer styling *********************************************/
 .footer {
   position: relative;
   footer {
@@ -337,7 +338,13 @@ $PGdiv-font: "Poppins", sans-serif;
       color: $pure-white;
       p {
         margin-top: 50px;
-        margin-left: 25%;
+        margin-left: 125px;
+        padding-left: 12%;
+        @media screen and (min-width: 992px) {
+          margin-top: 50px; ////////////////////////////////////////////////////you can use media screens this way in sass
+          margin-left: 30%;
+          padding-left: 12%;
+        }
       }
 
       .col-sm-12 {
