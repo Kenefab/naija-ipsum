@@ -128,18 +128,20 @@ h3 {
 
   /** aboutHead styling **/
   #aboutHead {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: $PGdiv-font;
-    color: $text-header-green;
+    @mixin font($font-size) {
+      font-weight: 700;
+      font-size: $font-size;
+      line-height: 18px;
+      font-family: $PGdiv-font;
+      color: $text-header-green;
+    }
+    @include font(15px);
     margin-top: 160px;
 
     @media only screen and (min-width: 1440px) {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 48px;
+      @include font(40px);
       margin-top: 400px;
+      margin-bottom: 25px;
     }
   }
 
@@ -159,7 +161,7 @@ h3 {
 #wrap2 {
   margin: 0 25px;
   @media only screen and (min-width: 1440px) {
-    margin: 70px 7% 0;
+    margin: 70px 9% 0;
   }
   #head2 {
     text-align: right;
@@ -177,4 +179,10 @@ h3 {
       @include p-text-laptop(20px);
     }
   }
+}
+
+#wrap-image {
+  background: url(../images/undraw_Web_developer_re_h7ie2.png);
+  width: 626px;
+  height: 476px;
 }

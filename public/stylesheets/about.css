@@ -106,8 +106,11 @@ h3 {
   #wrap1 #aboutHead {
     font-weight: 700;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #3bb431;
     margin-top: 400px;
+    margin-bottom: 25px;
   }
 }
 #wrap1 #p1 {
@@ -133,7 +136,7 @@ h3 {
 }
 @media only screen and (min-width: 1440px) {
   #wrap2 {
-    margin: 70px 7% 0;
+    margin: 70px 9% 0;
   }
 }
 #wrap2 #head2 {
@@ -160,6 +163,12 @@ h3 {
     font-size: 20px;
     line-height: 25px;
   }
+}
+
+#wrap-image {
+  background: url(../images/undraw_Web_developer_re_h7ie2.png);
+  width: 626px;
+  height: 476px;
 }
 
 /*# sourceMappingURL=about.css.map */
