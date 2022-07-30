@@ -1,0 +1,180 @@
+/////////////////////////////////////////////////////colors
+$fair-green: #559c4f;
+$pure-white: #fff;
+$border-white: #e8e8e8;
+$paragraph-text: #efefef;
+$paragraph-border: #888888;
+$text-color: #292d32;
+$text-header-green: #3bb431;
+$radio-border: #6b6b6b;
+
+////////////////////////////////
+/////////////////////////////////////////////////////fonts
+$nav-font: "IM FELL DW Pica";
+$PGdiv-font: "Poppins", sans-serif;
+
+////////////////////////////
+/////////////////////////////////////////////////////mixins
+@mixin sub-head-font {
+  color: $text-header-green;
+  font-family: $PGdiv-font;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+@mixin p-text-mobile {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  color: $text-color;
+  font-family: $PGdiv-font;
+}
+
+@mixin p-text-laptop($font-size) {
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: 25px;
+}
+
+/** base styles **/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/** head1 styling **/
+h3 {
+  @include sub-head-font();
+  @media only screen and (min-width: 1440px) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+/** end of base styles **/
+////////////////////////////////////
+
+/** navbar styling **/
+.navbar-brand {
+  position: relative;
+  #flag {
+    background: url(../images/image-from-rawpixel-id-7009713-original2.png)
+      no-repeat;
+    position: absolute;
+    width: 273px;
+    height: 103px;
+    left: -4px;
+    top: 38px;
+    opacity: 0.86;
+
+    @media only screen and (min-width: 1440px) {
+      background: url(../images/image-from-rawpixel-id-7009713-original\ 1.png)
+        no-repeat;
+      position: absolute;
+      width: 832px;
+      height: 394px;
+      left: -10px;
+      top: -3px;
+      opacity: 0.86;
+    }
+  }
+
+  #naija {
+    background: url(../images/Naija2.png) no-repeat;
+    position: absolute;
+    left: 15rem;
+    top: 48px;
+    width: 60px;
+    height: 1.8rem;
+
+    @media only screen and (min-width: 1440px) {
+      background: url(../images/Naija.png) no-repeat;
+      width: 192px;
+      height: 95px;
+      left: 754px;
+      top: 64px;
+    }
+  }
+
+  #ipsum {
+    background: url(../images/ipsum3.png) no-repeat;
+    position: absolute;
+    left: 16rem;
+    top: 78px;
+    width: 69px;
+    height: 1.7rem;
+
+    @media only screen and (min-width: 1440px) {
+      background: url(../images/ipsum.png) no-repeat;
+      width: 249px;
+      height: 116px;
+      left: 806px;
+      top: 149px;
+    }
+  }
+}
+/** end of navbar styling **/
+//////////////////////////////////
+
+/** wrap styling **/
+#wrap1 {
+  margin: 0 20px;
+  @media only screen and (min-width: 1440px) {
+    margin-left: 145px;
+  }
+
+  /** aboutHead styling **/
+  #aboutHead {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: $PGdiv-font;
+    color: $text-header-green;
+    margin-top: 160px;
+
+    @media only screen and (min-width: 1440px) {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      margin-top: 400px;
+    }
+  }
+
+  /** p1 styling **/
+  #p1 {
+    @include p-text-mobile();
+    margin-top: 20px;
+
+    @media only screen and (min-width: 1440px) {
+      @include p-text-laptop(21px);
+      width: 65%;
+    }
+  }
+}
+/** end of wrap1 styling **/
+
+#wrap2 {
+  margin: 0 25px;
+  @media only screen and (min-width: 1440px) {
+    margin: 70px 7% 0;
+  }
+  #head2 {
+    text-align: right;
+    @media only screen and (min-width: 1440px) {
+      margin: 20px 0;
+    }
+  }
+  #p2 {
+    @include p-text-mobile();
+    margin-top: 10px;
+    text-align: right;
+    padding-left: 1rem;
+
+    @media only screen and (min-width: 1440px) {
+      @include p-text-laptop(20px);
+    }
+  }
+}
