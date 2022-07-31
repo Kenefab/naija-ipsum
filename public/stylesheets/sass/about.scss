@@ -311,10 +311,14 @@ h3 {
     }
     #footerLinks {
       text-align: right;
-      padding-right: 2rem;
+      padding-left: 5.5rem;
       padding-top: 0.5rem;
+
       .col-12 {
         color: $pure-white;
+        padding-bottom: 0.4rem;
+        width: max-content;
+        text-align: center;
       }
     }
   }
