@@ -74,7 +74,7 @@ h3 {
 }
 @media only screen and (min-width: 1440px) {
   .navbar-brand #ipsum {
-    background: url(../images/ipsum.png) no-repeat;
+    background: url(../images/Ipsum.png) no-repeat;
     width: 249px;
     height: 116px;
     left: 806px;
@@ -149,6 +149,7 @@ h3 {
     background: url(../images/undraw_Web_developer_re_h7ie\ 1.png) no-repeat;
     height: 460px;
     border: 1px solid black;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 425px) {
@@ -161,15 +162,21 @@ h3 {
     display: none;
   }
 }
-#wrap2 .wrap-image-content #head2 {
+@media only screen and (min-width: 1440px) {
+  #wrap2 .wrap-image-content {
+    margin-right: 3%;
+    margin-top: 70px;
+  }
+}
+#wrap2 .wrap-image-content #h2p2wrap #head2 {
   text-align: right;
 }
 @media only screen and (min-width: 1440px) {
-  #wrap2 .wrap-image-content #head2 {
+  #wrap2 .wrap-image-content #h2p2wrap #head2 {
     margin: 20px 0;
   }
 }
-#wrap2 .wrap-image-content #p2 {
+#wrap2 .wrap-image-content #h2p2wrap #p2 {
   font-weight: 400;
   font-size: 11px;
   line-height: 12px;
@@ -180,11 +187,26 @@ h3 {
   padding-left: 1rem;
 }
 @media only screen and (min-width: 1440px) {
-  #wrap2 .wrap-image-content #p2 {
+  #wrap2 .wrap-image-content #h2p2wrap #p2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
   }
+}
+#wrap2 .wrap-image-content #h3p3wrap {
+  margin-top: 60px;
+  width: 100%;
+}
+#wrap2 .wrap-image-content #h3p3wrap #head3 {
+  padding-left: 49%;
+  border: 1px solid black;
+}
+#wrap2 .wrap-image-content #h3p3wrap #p3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 49%;
+  max-width: 100%;
 }
 
 /** end of wrap2 styling **/

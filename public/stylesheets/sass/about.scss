@@ -108,7 +108,7 @@ h3 {
     height: 1.7rem;
 
     @media only screen and (min-width: 1440px) {
-      background: url(../images/ipsum.png) no-repeat;
+      background: url(../images/Ipsum.png) no-repeat;
       width: 249px;
       height: 116px;
       left: 806px;
@@ -171,6 +171,7 @@ h3 {
       background: url(../images/undraw_Web_developer_re_h7ie\ 1.png) no-repeat;
       height: 460px;
       border: 1px solid black;
+      width: 100%;
     }
     margin: 70px 9% 0;
   }
@@ -182,20 +183,42 @@ h3 {
     @media only screen and (min-width: 320px) and (max-width: 1439px) {
       display: none;
     }
-    #head2 {
-      text-align: right;
-      @media only screen and (min-width: 1440px) {
-        margin: 20px 0;
+    @media only screen and (min-width: 1440px) {
+      margin-right: 3%;
+      margin-top: 70px;
+    }
+
+    #h2p2wrap {
+      #head2 {
+        text-align: right;
+        @media only screen and (min-width: 1440px) {
+          margin: 20px 0;
+        }
+      }
+      #p2 {
+        @include p-text-mobile();
+        margin-top: 10px;
+        text-align: right;
+        padding-left: 1rem;
+
+        @media only screen and (min-width: 1440px) {
+          @include p-text-laptop(20px);
+        }
       }
     }
-    #p2 {
-      @include p-text-mobile();
-      margin-top: 10px;
-      text-align: right;
-      padding-left: 1rem;
 
-      @media only screen and (min-width: 1440px) {
+    #h3p3wrap {
+      margin-top: 60px;
+      width: 100%;
+
+      #head3 {
+        padding-left: 49%;
+        border: 1px solid black;
+      }
+      #p3 {
         @include p-text-laptop(20px);
+        margin-left: 49%;
+        max-width: 100%;
       }
     }
   }
