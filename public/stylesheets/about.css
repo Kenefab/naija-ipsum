@@ -240,7 +240,7 @@ h3 {
   }
   #wrap3 .wrap-image .wrap-image-content {
     position: absolute;
-    top: 100px;
+    top: 90px;
     left: 28%;
   }
   #wrap3 .wrap-image .wrap-image-content #p3 {
@@ -304,14 +304,30 @@ h3 {
 }
 
 .footer {
-  position: relative;
-  border: 1px solid black;
+  overflow: hidden;
 }
 .footer footer {
-  position: absolute;
-  background: #3bb431;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #292d32;
+  font-family: "Poppins", sans-serif;
+  background-color: #3bb431;
   width: 100%;
-  height: 212px;
+  color: #fff;
+  margin-top: 20px;
+}
+.footer footer #pFooter {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+.footer footer #footerLinks {
+  text-align: right;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+}
+.footer footer #footerLinks .col-12 {
+  color: #fff;
 }
 
 /*# sourceMappingURL=about.css.map */
