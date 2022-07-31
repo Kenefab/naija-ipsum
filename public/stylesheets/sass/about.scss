@@ -147,7 +147,7 @@ h3 {
 
   /** p1 styling **/
   #p1 {
-    @include p-text-mobile(11px, 12px);
+    @include p-text-mobile(11px, 14px);
     margin-top: 20px;
 
     @media only screen and (min-width: 1440px) {
@@ -196,7 +196,7 @@ h3 {
         }
       }
       #p2 {
-        @include p-text-mobile(11px, 12px);
+        @include p-text-mobile(11px, 14px);
         margin-top: 10px;
         text-align: right;
         padding-left: 1rem;
@@ -258,7 +258,7 @@ h3 {
       top: 90px;
       left: 28%;
       #p3 {
-        @include p-text-mobile(11px, 12px);
+        @include p-text-mobile(11px, 14px);
         @media only screen and (min-width: 1440px) {
           @include p-text-laptop(20px);
         }
@@ -286,7 +286,7 @@ h3 {
     }
   }
   #p4 {
-    @include p-text-mobile(11px, 12px);
+    @include p-text-mobile(11px, 14px);
     margin-top: 10px;
     text-align: center;
     padding-left: 1rem;
