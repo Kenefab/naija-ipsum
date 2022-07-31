@@ -147,7 +147,7 @@ h3 {
   #wrap2 .wrap-image-big {
     position: relative;
     background: url(../images/undraw_Web_developer_re_h7ie\ 1.png) no-repeat;
-    height: 460px;
+    height: 560px;
     border: 1px solid black;
     width: 100%;
   }
@@ -173,7 +173,7 @@ h3 {
 }
 @media only screen and (min-width: 1440px) {
   #wrap2 .wrap-image-content #h2p2wrap #head2 {
-    margin: 20px 0;
+    margin: 1.5rem 0;
   }
 }
 #wrap2 .wrap-image-content #h2p2wrap #p2 {
@@ -194,18 +194,33 @@ h3 {
   }
 }
 #wrap2 .wrap-image-content #h3p3wrap {
-  margin-top: 60px;
+  margin-top: 4.5rem;
   width: 100%;
 }
 #wrap2 .wrap-image-content #h3p3wrap #head3 {
-  padding-left: 49%;
-  border: 1px solid black;
+  padding-left: 40%;
+  margin: 1.5rem 0;
 }
 #wrap2 .wrap-image-content #h3p3wrap #p3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  margin-left: 49%;
+  margin-left: 40%;
+  max-width: 100%;
+}
+#wrap2 .wrap-image-content #h4p4wrap {
+  margin-top: 4rem;
+  width: 100%;
+}
+#wrap2 .wrap-image-content #h4p4wrap #head4 {
+  padding-left: 30%;
+  margin: 1.5rem 0;
+}
+#wrap2 .wrap-image-content #h4p4wrap #p4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 30%;
   max-width: 100%;
 }
 
@@ -246,6 +261,11 @@ h3 {
 
 #wrap4 {
   margin: 0 25px;
+}
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  #wrap4 {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1440px) {
   #wrap4 {
