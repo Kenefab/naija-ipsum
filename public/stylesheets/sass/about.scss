@@ -35,7 +35,7 @@ $PGdiv-font: "Poppins", sans-serif;
 @mixin p-text-laptop($font-size) {
   font-weight: 400;
   font-size: $font-size;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 /** base styles **/
@@ -170,7 +170,7 @@ h3 {
       position: relative;
       background: url(../images/undraw_Web_developer_re_h7ie\ 1.png) no-repeat;
       height: 560px;
-      border: 1px solid black;
+
       width: 100%;
     }
     margin: 70px 9% 0;
@@ -181,7 +181,6 @@ h3 {
 
   .wrap-image-content {
     @media only screen and (min-width: 320px) and (max-width: 1439px) {
-      display: none;
     }
     @media only screen and (min-width: 1440px) {
       margin-right: 3%;
@@ -191,18 +190,22 @@ h3 {
     #h2p2wrap {
       #head2 {
         text-align: right;
+
         @media only screen and (min-width: 1440px) {
-          margin: 1.5rem 0;
+          margin-top: 4.5rem 0;
+          padding-top: 4rem;
+          margin-left: 0.2rem;
         }
       }
       #p2 {
         @include p-text-mobile(11px, 14px);
-        margin-top: 10px;
         text-align: right;
         padding-left: 1rem;
 
         @media only screen and (min-width: 1440px) {
           @include p-text-laptop(20px);
+          margin-top: 24px;
+          padding-left: 50%;
         }
       }
     }
@@ -210,6 +213,9 @@ h3 {
     #h3p3wrap {
       margin-top: 4.5rem;
       width: 100%;
+      @media only screen and (min-width: 320px) and (max-width: 1439px) {
+        display: none;
+      }
 
       #head3 {
         padding-left: 40%;
@@ -225,6 +231,9 @@ h3 {
     #h4p4wrap {
       margin-top: 4rem;
       width: 100%;
+      @media only screen and (min-width: 320px) and (max-width: 1439px) {
+        display: none;
+      }
 
       #head4 {
         padding-left: 30%;
@@ -300,24 +309,33 @@ h3 {
 .footer {
   overflow: hidden;
   footer {
-    @include p-text-mobile(8px, 10px);
+    @include p-text-mobile(9px, 10px);
     background-color: $text-header-green;
     width: 100%;
     color: $pure-white;
     margin-top: 20px;
+    @media only screen and (min-width: 1440px) {
+      @include p-text-laptop(20px);
+      margin-top: 30px;
+    }
     #pFooter {
       padding-left: 2rem;
       padding-top: 0.5rem;
+      @media only screen and (min-width: 1440px) {
+        padding-left: 9rem;
+        padding-top: 1.5rem;
+      }
     }
     #footerLinks {
       text-align: right;
-      padding-left: 5.5rem;
-      padding-top: 0.5rem;
+      padding: 0.5rem 0 0.5rem 5.5rem;
+      @media only screen and (min-width: 1440px) {
+        padding: 1.5rem 0 1.5rem 35rem;
+      }
 
       .col-12 {
         color: $pure-white;
         padding-bottom: 0.4rem;
-        width: max-content;
         text-align: center;
       }
     }

@@ -125,7 +125,7 @@ h3 {
   #wrap1 #p1 {
     font-weight: 400;
     font-size: 21px;
-    line-height: 25px;
+    line-height: 30px;
     padding-right: 15rem;
   }
 }
@@ -148,18 +148,12 @@ h3 {
     position: relative;
     background: url(../images/undraw_Web_developer_re_h7ie\ 1.png) no-repeat;
     height: 560px;
-    border: 1px solid black;
     width: 100%;
   }
 }
 @media only screen and (min-width: 425px) {
   #wrap2 {
     width: 85%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1439px) {
-  #wrap2 .wrap-image-content {
-    display: none;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -173,7 +167,9 @@ h3 {
 }
 @media only screen and (min-width: 1440px) {
   #wrap2 .wrap-image-content #h2p2wrap #head2 {
-    margin: 1.5rem 0;
+    margin-top: 4.5rem 0;
+    padding-top: 4rem;
+    margin-left: 0.2rem;
   }
 }
 #wrap2 .wrap-image-content #h2p2wrap #p2 {
@@ -182,7 +178,6 @@ h3 {
   line-height: 14px;
   color: #292d32;
   font-family: "Poppins", sans-serif;
-  margin-top: 10px;
   text-align: right;
   padding-left: 1rem;
 }
@@ -190,12 +185,19 @@ h3 {
   #wrap2 .wrap-image-content #h2p2wrap #p2 {
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
+    margin-top: 24px;
+    padding-left: 50%;
   }
 }
 #wrap2 .wrap-image-content #h3p3wrap {
   margin-top: 4.5rem;
   width: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 1439px) {
+  #wrap2 .wrap-image-content #h3p3wrap {
+    display: none;
+  }
 }
 #wrap2 .wrap-image-content #h3p3wrap #head3 {
   padding-left: 40%;
@@ -204,13 +206,18 @@ h3 {
 #wrap2 .wrap-image-content #h3p3wrap #p3 {
   font-weight: 400;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   margin-left: 40%;
   max-width: 100%;
 }
 #wrap2 .wrap-image-content #h4p4wrap {
   margin-top: 4rem;
   width: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 1439px) {
+  #wrap2 .wrap-image-content #h4p4wrap {
+    display: none;
+  }
 }
 #wrap2 .wrap-image-content #h4p4wrap #head4 {
   padding-left: 30%;
@@ -219,7 +226,7 @@ h3 {
 #wrap2 .wrap-image-content #h4p4wrap #p4 {
   font-weight: 400;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   margin-left: 30%;
   max-width: 100%;
 }
@@ -255,7 +262,7 @@ h3 {
   #wrap3 .wrap-image .wrap-image-content #p3 {
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
 }
 
@@ -299,7 +306,7 @@ h3 {
   #wrap4 #p4 {
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
 }
 
@@ -308,7 +315,7 @@ h3 {
 }
 .footer footer {
   font-weight: 400;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 10px;
   color: #292d32;
   font-family: "Poppins", sans-serif;
@@ -317,19 +324,36 @@ h3 {
   color: #fff;
   margin-top: 20px;
 }
+@media only screen and (min-width: 1440px) {
+  .footer footer {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+}
 .footer footer #pFooter {
   padding-left: 2rem;
   padding-top: 0.5rem;
 }
+@media only screen and (min-width: 1440px) {
+  .footer footer #pFooter {
+    padding-left: 9rem;
+    padding-top: 1.5rem;
+  }
+}
 .footer footer #footerLinks {
   text-align: right;
-  padding-left: 5.5rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0 0.5rem 5.5rem;
+}
+@media only screen and (min-width: 1440px) {
+  .footer footer #footerLinks {
+    padding: 1.5rem 0 1.5rem 35rem;
+  }
 }
 .footer footer #footerLinks .col-12 {
   color: #fff;
   padding-bottom: 0.4rem;
-  width: max-content;
   text-align: center;
 }
 
