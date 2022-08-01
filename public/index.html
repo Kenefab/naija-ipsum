@@ -24,22 +24,33 @@
     ></script>
   </head>
   <body>
+    <!--------------------------------------- header section ---------------------------------------->
     <div class="header" id="parent">
-      <div id="child">
+      <!-- <div id="child"> -->
         <header>
           <div class="menu-bar">
             <div
               class="navbar navbar-expand-lg navbar-light navbar-fixed-top container"
               id="nav"
             >
-              <a class="navbar-brand" href="www.google.com">
-                <img
-                  src="./images/image-from-rawpixel-id-7009713-original 1.png"
-                  alt=""
-                  id="flag"
-                />
-                <img src="./images/Naija.png" alt="Naija" id="naija" />
-                <img src="./images/Ipsum.png" alt="Ipsum" id="ipsum" />
+              <a id="nav-link" class="navbar-brand" href="www.google.com">
+
+                <div class="header-content">
+                    
+                  <div class="flag-container">
+                    <img
+                      src="./images/image-from-rawpixel-id-7009713-original 1.png"
+                      alt=""
+                      id="flag"
+                    />
+                  </div>
+                  
+                  <div class="naija-ipsum-container">
+                    <img src="./images/Naija.png" alt="Naija" id="naija" />
+                    <img src="./images/Ipsum.png" alt="Ipsum" id="ipsum" />
+                  </div>
+
+                </div>
               </a>
             </div>
             <!-- end of navbar div -->
@@ -47,127 +58,132 @@
           <!-- end of menu-bar div -->
         </header>
         <!-- end of header element -->
+    </div>
 
-        <!-- start of PG div -->
-        <div id="PGdiv" class="container">
-          <form action="">
-            <label for="paragraph" id="paragraphLabel"
-              ><span id="paragraphText">
-                <img
-                  src="./icons/message-edit.svg"
-                  alt="paragraph-icon"
-                  class="icons"
-                />
-                Paragraphs:
-              </span>
-            </label>
-            <input type="number" name="numOfParagraphs" id="numOfParagraphs" />
-            <input type="submit" value="Generate" id="generateBtn" />
-          </form>
-          <div id="homeImg"></div>
-        </div>
-        <!-- end of PG div -->
 
-        <!-- start of type div -->
-        <div id="typeDiv" class="container">
-          <form action="">
-            <div id="pidginDiv">
-              <div id="typeDivInner">
-                <span id="typeText">
-                  <img src="./icons/task.svg" alt="type-icon" class="icons" />
-                  Type:
-                </span>
-              </div>
-              <label for="pidgin" id="pidginLabel">Pidgin</label>
-              <input type="radio" name="pidgin" id="pidginRadioBtn" />
-            </div>
-            <div id="amala-eweduDiv">
-              <label for="AmalaEwedu" id="amala-eweduLabel">Amala&Ewedu</label>
-              <input type="radio" name="AmalaEwedu" id="amala-eweduRadioBtn" />
-            </div>
-          </form>
-        </div>
-        <!-- end of type div -->
-
-        <!-- start of generated-text div -->
-        <div class="generated-text container" id="targetText">
-          <div id="placeholder-container">
-            <p class="placeholder-div">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              necessitatibus iusto porro quis illo cum eos quaerat modi in,
-              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
-              unde maiores aliquam et!
-            </p>
-            <p class="placeholder-div">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              necessitatibus iusto porro quis illo cum eos quaerat modi in,
-              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
-              unde maiores aliquam et!
-            </p>
-            <p class="placeholder-div">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              necessitatibus iusto porro quis illo cum eos quaerat modi in,
-              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
-              unde maiores aliquam et!
-            </p>
-          </div>
-        </div>
-        <!-- end of generated-text div -->
-
-        <div class="container section-container">
-          <div class="section1">
-            <h1>What does Naija Ipsum mean?</h1>
-            <p>
-              Derived from Latin dolorem ipsum (“pain itself”), Naija Ipsum is
-              filler text used by Nigerian publishers and graphic designers used
-              to demonstrate native graphic elements.
-            </p>
-            <p>
-              Naija Ipsum is placeholder text that stands in for meaningful
-              content. It allows designers to focus on getting the graphical
-              elements such as typography, font, and page layout in place first,
-              before you move forward with the rest of your strategy. Before
-              publication, you replace Naija Ipsum text with your polished, high
-              quality content.
-            </p>
-          </div>
-
-          <div class="section2">
-            <h1>Why do we use Naija Ipsum?</h1>
-            <p>
-              Many times, readers will get distracted by readable text when
-              looking at the layout of a page. Instead of using filler text that
-              says “Insert content here,” Naija Ipsum uses a normal distribution
-              of letters, making it resemble Nigeria's traditional English.
-            </p>
-          </div>
-        </div>
-      </div>
+        
+    <div class="container">
       
-      <div class="footer">
-      <footer>
-        <div class="row">
-          <div class="col-sm-6">
-            <p><!-----------------------------------------------------------  Sammy over here --------------------------------------------------->
-              Want to get in touch? We'd love to hear fom you!
-              <br />
-              trevlo.inc@gmail.com
-            </p>
+      <!--------------------------------------- paragraph section ---------------------------------------->
+
+      <section class="paragraph-section">
+        <form action="">
+          <div class="form-single-line">
+            <div class="text-icon-container">
+              <img
+                src="./icons/message-edit.svg"
+                alt="paragraph-icon"
+              />
+              <span>Paragraphs:</span>
+            </div>
+            <input 
+              type="number" 
+              name="numOfParagraphs" 
+            />
+            <input 
+              type="submit" 
+              value="Generate" 
+            />
           </div>
-          <div class="col-sm-6">
-            <div class="row">
-              <a href="#" class="col-sm-12" id="home">Home</a>
-              <a href="#" class="col-sm-12" id="about">About</a>
-              <a href="#" class="col-sm-12" id="faq">FAQ</a>
+          
+          <div class="form-single-line left-align">
+            <div class="text-icon-container">
+              <img
+                src="./icons/task.svg"
+                alt="paragraph-icon"
+              />
+              <span>Type:</span>
+            </div>
+            
+            <div class="radio-button-container">
+              <label for="pidgin">Pidgin</label>
+              <input type="radio" name="pidgin" />
+            </div>
+
+            <div class="radio-button-container">
+              <label for="AmalaEwedu">Amala&Ewedu</label>
+              <input type="radio" name="AmalaEwedu" />
             </div>
           </div>
+        </form>
+
+        <div class="writeup-image-container">
+          <div class="writeup">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              necessitatibus iusto porro quis illo cum eos quaerat modi in,
+              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
+              unde maiores aliquam et!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              necessitatibus iusto porro quis illo cum eos quaerat modi in,
+              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
+              unde maiores aliquam et!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              necessitatibus iusto porro quis illo cum eos quaerat modi in,
+              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
+              unde maiores aliquam et!
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="./images/man-on-desk.png" alt="desk">
+          </div>
         </div>
-      </footer>
-      </div>
+      </section>
+
+
+      <!--------------------------------------- what does naija ipsum mean section ---------------------------------------->
+
+      <section class="naija-ipsum">
+        <h1>What does Naija Ipsum mean?</h1>
+        <p>
+          Derived from Latin dolorem ipsum (“pain itself”), Naija Ipsum is
+          filler text used by Nigerian publishers and graphic designers used
+          to demonstrate native graphic elements.
+        </p>
+        <p>
+          Naija Ipsum is placeholder text that stands in for meaningful
+          content. It allows designers to focus on getting the graphical
+          elements such as typography, font, and page layout in place first,
+          before you move forward with the rest of your strategy. Before
+          publication, you replace Naija Ipsum text with your polished, high
+          quality content.
+        </p>
+
+        <h1>Why do we use Naija Ipsum?</h1>
+        <p>
+          Many times, readers will get distracted by readable text when
+          looking at the layout of a page. Instead of using filler text that
+          says “Insert content here,” Naija Ipsum uses a normal distribution
+          of letters, making it resemble Nigeria's traditional English.
+        </p>
+      </section>
 
     </div>
+
+    <!--------------------------------------- footer ---------------------------------------->
+
+    <footer>
+      <div class="container">
+        <div class="get-in-touch">
+          <p>Want to get in touch? We'd love to hear fom you!</p>
+          <p>trevlo.inc@gmail.com</p>
+        </div>
+        <div class="links-container">
+          <a href="#" id="home">Home</a><br>
+          <a href="#" id="about">About</a><br>
+          <a href="#" id="faq">FAQ</a>
+        </div>
+      </div>
+    </footer>
+
+
+    
       <!-- end of child div -->
-    </div>
+    <!-- </div> -->
     <!-- end of parent div -->
    
 
