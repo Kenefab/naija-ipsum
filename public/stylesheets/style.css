@@ -6,58 +6,38 @@
   box-sizing: border-box;
 }
 
-#parent {
-  position: relative;
-}
-#parent #child {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /** end of base styles **/
 /*************************************** navbar styling *******************************************/
-#nav {
-  position: relative;
+#nav-link {
+  width: 100%;
 }
 
-#flag {
-  position: absolute;
-  width: 832px;
-  height: 394px;
-  left: -70px;
-  top: -3px;
+.header-content {
+  display: flex;
+  width: 100%;
+}
+.header-content .flag-container {
+  width: 100%;
+}
+.header-content .flag-container #flag {
+  width: 100%;
+  top: 0;
   opacity: 0.86;
 }
-
-#naija {
-  position: absolute;
-  width: 215px;
-  height: 116px;
-  left: 690px;
-  top: 64px;
-  font-style: normal;
-  font-family: "IM FELL DW Pica";
-  font-weight: 400;
-  font-size: 91px;
-  line-height: 114px;
-  color: #559c4f;
+.header-content .naija-ipsum-container {
+  width: 35%;
+  position: relative;
 }
-
-#ipsum {
+.header-content .naija-ipsum-container #naija {
   position: absolute;
-  width: 249px;
-  height: 116px;
-  left: 745px;
-  top: 155px;
-  font-style: normal;
-  font-family: "IM FELL DW Pica";
-  font-weight: 400;
-  font-size: 91px;
-  line-height: 114px;
-  color: #559c4f;
+  width: 100%;
+  top: 11%;
+  left: -22%;
+}
+.header-content .naija-ipsum-container #ipsum {
+  position: absolute;
+  top: 45%;
+  width: 100%;
 }
 
 /** end of navbar styling **/
