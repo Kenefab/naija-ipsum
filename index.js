@@ -1,4 +1,4 @@
-//require express and create an express app instance
+//require express and create an Express app instance
 const express = require("express");
 const app = express();
 

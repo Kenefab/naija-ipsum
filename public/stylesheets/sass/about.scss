@@ -12,332 +12,62 @@ $radio-border: #6b6b6b;
 /////////////////////////////////////////////////////fonts
 $nav-font: "IM FELL DW Pica";
 $PGdiv-font: "Poppins", sans-serif;
-
 ////////////////////////////
+
 /////////////////////////////////////////////////////mixins
-@mixin sub-head-font {
-  color: $text-header-green;
-  font-family: $PGdiv-font;
-  width: 100%;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
+@mixin test-border {
+  border: 1px solid black;
 }
+///////////////////////////////////////
 
-@mixin p-text-mobile($font-size, $line-height) {
-  font-weight: 400;
-  font-size: $font-size;
-  line-height: $line-height;
-  color: $text-color;
-  font-family: $PGdiv-font;
-}
-
-@mixin p-text-laptop($font-size) {
-  font-weight: 400;
-  font-size: $font-size;
-  line-height: 30px;
-}
-
-/** base styles **/
+/************************************************* base styles ***************************************/
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-/** head1 styling **/
-h3 {
-  @include sub-head-font();
-  @media only screen and (min-width: 1440px) {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-  }
+body {
+  padding-bottom: 0;
+  margin: 0;
 }
 /** end of base styles **/
 ////////////////////////////////////
 
-/** navbar styling **/
-.navbar-brand {
-  position: relative;
-  #flag {
-    background: url(../images/image-from-rawpixel-id-7009713-original2.png)
-      no-repeat;
-    position: absolute;
-    width: 273px;
-    height: 103px;
-    left: -4px;
-    top: 38px;
-    opacity: 0.86;
+/*************************************** navbar styling *******************************************/
+#nav-link {
+  width: 100%;
+}
 
-    @media only screen and (min-width: 1440px) {
-      background: url(../images/image-from-rawpixel-id-7009713-original\ 1.png)
-        no-repeat;
-      position: absolute;
-      width: 832px;
-      height: 394px;
-      left: -10px;
-      top: -3px;
+.header-content {
+  display: flex;
+  width: 100%;
+
+  .flag-container {
+    width: 100%;
+    #flag {
+      width: 100%;
       opacity: 0.86;
+      top: 0;
     }
   }
 
-  #naija {
-    background: url(../images/Naija2.png) no-repeat;
-    position: absolute;
-    left: 15rem;
-    top: 48px;
-    width: 60px;
-    height: 1.8rem;
-
-    @media only screen and (min-width: 1440px) {
-      background: url(../images/Naija.png) no-repeat;
-      width: 192px;
-      height: 95px;
-      left: 754px;
-      top: 64px;
-    }
-  }
-
-  #ipsum {
-    background: url(../images/Ipsum3.png) no-repeat;
-    position: absolute;
-    left: 16rem;
-    top: 78px;
-    width: 69px;
-    height: 1.7rem;
-
-    @media only screen and (min-width: 1440px) {
-      background: url(../images/Ipsum.png) no-repeat;
-      width: 249px;
-      height: 116px;
-      left: 806px;
-      top: 149px;
-    }
-  }
-}
-/** end of navbar styling **/
-//////////////////////////////////
-
-/** wrap styling **/
-#wrap1 {
-  margin: 0 20px;
-  @media only screen and (min-width: 1440px) {
-    margin-left: 145px;
-  }
-
-  /** aboutHead styling **/
-  #aboutHead {
-    @mixin font($font-size) {
-      font-weight: 700;
-      font-size: $font-size;
-      line-height: 18px;
-      font-family: $PGdiv-font;
-      color: $text-header-green;
-    }
-    @include font(15px);
-    margin-top: 160px;
-
-    @media only screen and (min-width: 1440px) {
-      @include font(40px);
-      margin-top: 400px;
-      margin-bottom: 25px;
-    }
-  }
-
-  /** p1 styling **/
-  #p1 {
-    @include p-text-mobile(11px, 14px);
-    margin-top: 20px;
-
-    @media only screen and (min-width: 1440px) {
-      @include p-text-laptop(21px);
-      padding-right: 15rem;
-    }
-    @media only screen and (min-width: 425px) {
-      width: 100%;
-    }
-  }
-}
-/** end of wrap1 styling **/
-////////////////////////////////////
-
-/** wrap2 styling **/
-#wrap2 {
-  margin: 0 25px;
-  @media only screen and (min-width: 1440px) {
-    .wrap-image-big {
-      position: relative;
-      background: url(../images/undraw_Web_developer_re_h7ie\ 1.png) no-repeat;
-      height: 560px;
-
-      width: 100%;
-    }
-    margin: 70px 9% 0;
-  }
-  @media only screen and (min-width: 425px) {
-    width: 85%;
-  }
-
-  .wrap-image-content {
-    @media only screen and (min-width: 320px) and (max-width: 1439px) {
-    }
-    @media only screen and (min-width: 1440px) {
-      margin-right: 3%;
-      margin-top: 70px;
-    }
-
-    #h2p2wrap {
-      #head2 {
-        text-align: right;
-
-        @media only screen and (min-width: 1440px) {
-          margin-top: 4.5rem 0;
-          padding-top: 4rem;
-          margin-left: 0.2rem;
-        }
-      }
-      #p2 {
-        @include p-text-mobile(11px, 14px);
-        text-align: right;
-        padding-left: 1rem;
-
-        @media only screen and (min-width: 1440px) {
-          @include p-text-laptop(20px);
-          margin-top: 24px;
-          padding-left: 50%;
-        }
-      }
-    }
-
-    #h3p3wrap {
-      margin-top: 4.5rem;
-      width: 100%;
-      @media only screen and (min-width: 320px) and (max-width: 1439px) {
-        display: none;
-      }
-
-      #head3 {
-        padding-left: 40%;
-        margin: 1.5rem 0;
-      }
-      #p3 {
-        @include p-text-laptop(20px);
-        margin-left: 40%;
-        max-width: 100%;
-      }
-    }
-
-    #h4p4wrap {
-      margin-top: 4rem;
-      width: 100%;
-      @media only screen and (min-width: 320px) and (max-width: 1439px) {
-        display: none;
-      }
-
-      #head4 {
-        padding-left: 30%;
-        margin: 1.5rem 0;
-      }
-      #p4 {
-        @include p-text-laptop(20px);
-        margin-left: 30%;
-        max-width: 100%;
-      }
-    }
-  }
-}
-/** end of wrap2 styling **/
-//////////////////////////////////
-
-/** wrap3 styling **/
-#wrap3 .wrap-image {
-  @media only screen and (min-width: 1440px) and (max-width: 2560px) {
-    display: none;
-  }
-
-  @media only screen and (min-width: 320px) and (max-width: 1439px) {
+  .naija-ipsum-container {
+    width: 35%;
     position: relative;
-    background: url(../images/undraw_Web_developer_re_h7ie2.png) no-repeat;
-    width: 100%;
-    height: 190px;
 
-    .wrap-image-content {
+    #naija {
       position: absolute;
-      top: 90px;
-      left: 28%;
-      #p3 {
-        @include p-text-mobile(11px, 14px);
-        @media only screen and (min-width: 1440px) {
-          @include p-text-laptop(20px);
-        }
-      }
+      top: 18%;
+      left: -25%;
+      width: 100%;
     }
-  }
-}
 
-#wrap4 {
-  margin: 0 25px;
-  @media only screen and (min-width: 1440px) and (max-width: 2560px) {
-    display: none;
-  }
-
-  @media only screen and (min-width: 1440px) {
-    margin: 70px 9% 0;
-  }
-  @media only screen and (min-width: 425px) {
-    width: 85%;
-  }
-  #head4 {
-    text-align: center;
-    @media only screen and (min-width: 1440px) {
-      margin: 20px 0;
-    }
-  }
-  #p4 {
-    @include p-text-mobile(11px, 14px);
-    margin-top: 10px;
-    text-align: center;
-    padding-left: 1rem;
-
-    @media only screen and (min-width: 1440px) {
-      @include p-text-laptop(20px);
-    }
-  }
-}
-
-.footer {
-  overflow: hidden;
-  footer {
-    @include p-text-mobile(9px, 10px);
-    background-color: $text-header-green;
-    width: 100%;
-    color: $pure-white;
-    margin-top: 20px;
-    @media only screen and (min-width: 1440px) {
-      @include p-text-laptop(20px);
-      margin-top: 30px;
-    }
-    #pFooter {
-      padding-left: 2rem;
-      padding-top: 0.5rem;
-      @media only screen and (min-width: 1440px) {
-        padding-left: 9rem;
-        padding-top: 1.5rem;
-      }
-    }
-    #footerLinks {
-      text-align: right;
-      padding: 0.5rem 0 0.5rem 5.5rem;
-      @media only screen and (min-width: 1440px) {
-        padding: 1.5rem 0 1.5rem 35rem;
-      }
-
-      .col-12 {
-        color: $pure-white;
-        padding-bottom: 0.4rem;
-        text-align: center;
-      }
+    #ipsum {
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      width: 100%;
     }
   }
 }

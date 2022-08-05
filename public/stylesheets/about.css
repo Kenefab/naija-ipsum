@@ -1,360 +1,48 @@
-/** base styles **/
+/************************************************* base styles ***************************************/
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-/** head1 styling **/
-h3 {
-  color: #3bb431;
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-}
-@media only screen and (min-width: 1440px) {
-  h3 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-  }
+body {
+  padding-bottom: 0;
+  margin: 0;
 }
 
 /** end of base styles **/
-/** navbar styling **/
-.navbar-brand {
+/*************************************** navbar styling *******************************************/
+#nav-link {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+}
+.header-content .flag-container {
+  width: 100%;
+}
+.header-content .flag-container #flag {
+  width: 100%;
+  opacity: 0.86;
+  top: 0;
+}
+.header-content .naija-ipsum-container {
+  width: 35%;
   position: relative;
 }
-.navbar-brand #flag {
-  background: url(../images/image-from-rawpixel-id-7009713-original2.png) no-repeat;
+.header-content .naija-ipsum-container #naija {
   position: absolute;
-  width: 273px;
-  height: 103px;
-  left: -4px;
-  top: 38px;
-  opacity: 0.86;
-}
-@media only screen and (min-width: 1440px) {
-  .navbar-brand #flag {
-    background: url(../images/image-from-rawpixel-id-7009713-original\ 1.png) no-repeat;
-    position: absolute;
-    width: 832px;
-    height: 394px;
-    left: -10px;
-    top: -3px;
-    opacity: 0.86;
-  }
-}
-.navbar-brand #naija {
-  background: url(../images/Naija2.png) no-repeat;
-  position: absolute;
-  left: 15rem;
-  top: 48px;
-  width: 60px;
-  height: 1.8rem;
-}
-@media only screen and (min-width: 1440px) {
-  .navbar-brand #naija {
-    background: url(../images/Naija.png) no-repeat;
-    width: 192px;
-    height: 95px;
-    left: 754px;
-    top: 64px;
-  }
-}
-.navbar-brand #ipsum {
-  background: url(../images/Ipsum3.png) no-repeat;
-  position: absolute;
-  left: 16rem;
-  top: 78px;
-  width: 69px;
-  height: 1.7rem;
-}
-@media only screen and (min-width: 1440px) {
-  .navbar-brand #ipsum {
-    background: url(../images/Ipsum.png) no-repeat;
-    width: 249px;
-    height: 116px;
-    left: 806px;
-    top: 149px;
-  }
-}
-
-/** end of navbar styling **/
-/** wrap styling **/
-#wrap1 {
-  margin: 0 20px;
-  /** aboutHead styling **/
-  /** p1 styling **/
-}
-@media only screen and (min-width: 1440px) {
-  #wrap1 {
-    margin-left: 145px;
-  }
-}
-#wrap1 #aboutHead {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  font-family: "Poppins", sans-serif;
-  color: #3bb431;
-  margin-top: 160px;
-}
-@media only screen and (min-width: 1440px) {
-  #wrap1 #aboutHead {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 18px;
-    font-family: "Poppins", sans-serif;
-    color: #3bb431;
-    margin-top: 400px;
-    margin-bottom: 25px;
-  }
-}
-#wrap1 #p1 {
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 14px;
-  color: #292d32;
-  font-family: "Poppins", sans-serif;
-  margin-top: 20px;
-}
-@media only screen and (min-width: 1440px) {
-  #wrap1 #p1 {
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 30px;
-    padding-right: 15rem;
-  }
-}
-@media only screen and (min-width: 425px) {
-  #wrap1 #p1 {
-    width: 100%;
-  }
-}
-
-/** end of wrap1 styling **/
-/** wrap2 styling **/
-#wrap2 {
-  margin: 0 25px;
-}
-@media only screen and (min-width: 1440px) {
-  #wrap2 {
-    margin: 70px 9% 0;
-  }
-  #wrap2 .wrap-image-big {
-    position: relative;
-    background: url(../images/undraw_Web_developer_re_h7ie\ 1.png) no-repeat;
-    height: 560px;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 425px) {
-  #wrap2 {
-    width: 85%;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  #wrap2 .wrap-image-content {
-    margin-right: 3%;
-    margin-top: 70px;
-  }
-}
-#wrap2 .wrap-image-content #h2p2wrap #head2 {
-  text-align: right;
-}
-@media only screen and (min-width: 1440px) {
-  #wrap2 .wrap-image-content #h2p2wrap #head2 {
-    margin-top: 4.5rem 0;
-    padding-top: 4rem;
-    margin-left: 0.2rem;
-  }
-}
-#wrap2 .wrap-image-content #h2p2wrap #p2 {
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 14px;
-  color: #292d32;
-  font-family: "Poppins", sans-serif;
-  text-align: right;
-  padding-left: 1rem;
-}
-@media only screen and (min-width: 1440px) {
-  #wrap2 .wrap-image-content #h2p2wrap #p2 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 24px;
-    padding-left: 50%;
-  }
-}
-#wrap2 .wrap-image-content #h3p3wrap {
-  margin-top: 4.5rem;
+  top: 18%;
+  left: -25%;
   width: 100%;
 }
-@media only screen and (min-width: 320px) and (max-width: 1439px) {
-  #wrap2 .wrap-image-content #h3p3wrap {
-    display: none;
-  }
-}
-#wrap2 .wrap-image-content #h3p3wrap #head3 {
-  padding-left: 40%;
-  margin: 1.5rem 0;
-}
-#wrap2 .wrap-image-content #h3p3wrap #p3 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin-left: 40%;
-  max-width: 100%;
-}
-#wrap2 .wrap-image-content #h4p4wrap {
-  margin-top: 4rem;
+.header-content .naija-ipsum-container #ipsum {
+  position: absolute;
+  top: 50%;
+  left: 2%;
   width: 100%;
-}
-@media only screen and (min-width: 320px) and (max-width: 1439px) {
-  #wrap2 .wrap-image-content #h4p4wrap {
-    display: none;
-  }
-}
-#wrap2 .wrap-image-content #h4p4wrap #head4 {
-  padding-left: 30%;
-  margin: 1.5rem 0;
-}
-#wrap2 .wrap-image-content #h4p4wrap #p4 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin-left: 30%;
-  max-width: 100%;
-}
-
-/** end of wrap2 styling **/
-/** wrap3 styling **/
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-  #wrap3 .wrap-image {
-    display: none;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1439px) {
-  #wrap3 .wrap-image {
-    position: relative;
-    background: url(../images/undraw_Web_developer_re_h7ie2.png) no-repeat;
-    width: 100%;
-    height: 190px;
-  }
-  #wrap3 .wrap-image .wrap-image-content {
-    position: absolute;
-    top: 90px;
-    left: 28%;
-  }
-  #wrap3 .wrap-image .wrap-image-content #p3 {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 14px;
-    color: #292d32;
-    font-family: "Poppins", sans-serif;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1439px) and (min-width: 1440px) {
-  #wrap3 .wrap-image .wrap-image-content #p3 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-#wrap4 {
-  margin: 0 25px;
-}
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-  #wrap4 {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  #wrap4 {
-    margin: 70px 9% 0;
-  }
-}
-@media only screen and (min-width: 425px) {
-  #wrap4 {
-    width: 85%;
-  }
-}
-#wrap4 #head4 {
-  text-align: center;
-}
-@media only screen and (min-width: 1440px) {
-  #wrap4 #head4 {
-    margin: 20px 0;
-  }
-}
-#wrap4 #p4 {
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 14px;
-  color: #292d32;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
-  text-align: center;
-  padding-left: 1rem;
-}
-@media only screen and (min-width: 1440px) {
-  #wrap4 #p4 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.footer {
-  overflow: hidden;
-}
-.footer footer {
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 10px;
-  color: #292d32;
-  font-family: "Poppins", sans-serif;
-  background-color: #3bb431;
-  width: 100%;
-  color: #fff;
-  margin-top: 20px;
-}
-@media only screen and (min-width: 1440px) {
-  .footer footer {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 30px;
-  }
-}
-.footer footer #pFooter {
-  padding-left: 2rem;
-  padding-top: 0.5rem;
-}
-@media only screen and (min-width: 1440px) {
-  .footer footer #pFooter {
-    padding-left: 9rem;
-    padding-top: 1.5rem;
-  }
-}
-.footer footer #footerLinks {
-  text-align: right;
-  padding: 0.5rem 0 0.5rem 5.5rem;
-}
-@media only screen and (min-width: 1440px) {
-  .footer footer #footerLinks {
-    padding: 1.5rem 0 1.5rem 35rem;
-  }
-}
-.footer footer #footerLinks .col-12 {
-  color: #fff;
-  padding-bottom: 0.4rem;
-  text-align: center;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -115,21 +115,21 @@ body {
   display: flex;
   width: 100%;
 
-  & .flag-container {
+  .flag-container {
     width: 100%;
 
-    & #flag {
+    #flag {
       width: 100%;
       top: 0;
       opacity: 0.86;
     }
   }
-  
-  & .naija-ipsum-container {
+
+  .naija-ipsum-container {
     width: 35%;
     position: relative;
 
-    & #naija {
+    #naija {
       position: absolute;
       width: 100%;
       top: 11%;
@@ -138,8 +138,8 @@ body {
       // height: 116px;
       // left: 690px;
     }
-    
-    & #ipsum {
+
+    #ipsum {
       position: absolute;
       top: 45%;
       width: 100%;
@@ -150,55 +150,57 @@ body {
   }
 }
 
-
 /** end of navbar styling **/
 ///////////////////////////////////////////////////
-
 
 /******************************************************* Paragraph-section styling *****************************************/
 
 .paragraph-section {
-  & .form-single-line {
+  .form-single-line {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    font-family: $PGdiv-font;
     // background-color: red;
-    
 
-    & .text-icon-container {
+    #type {
+      text-align: center;
+      margin-right: 0.5rem;
+    }
+
+    .text-icon-container {
       @include border();
-      width: 150px;
+      width: 200px;
+      text-align: right;
       padding: 5px 15px;
+      margin-right: 0.5rem;
 
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         // width: 130px;
         // padding: 3px 10px;
         transform: scale(0.8);
         margin-left: -12px;
       }
     }
-  
-    & input[type="number"] {
+
+    input[type="number"] {
       @include font-block(35px, 16px, 500);
       color: $text-color;
       background: $paragraph-text;
       border: 1px solid $paragraph-border;
       border-radius: 100px;
       padding: 10px 10px 10px 30px;
-      box-sizing: border-box;
       width: calc(100% - (200px + 150px));
-
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         padding: 4px 4px 4px 10px;
         height: 40px;
         width: calc(100% - 280px);
         margin-left: -10px;
       }
-      
     }
 
-    & input[type="submit"] {
+    input[type="submit"] {
       @include border();
       @include font-block(35px, 16px, 500);
       background: $text-header-green;
@@ -206,12 +208,12 @@ body {
       text-align: center;
       padding: 0px 50px;
 
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         padding: 0px 25px;
       }
     }
 
-    & .radio-button-container {
+    .radio-button-container {
       @include font-block(16px, 16px, 500);
       display: flex;
       align-items: center;
@@ -220,249 +222,61 @@ body {
       padding: 8px 10px;
       margin-right: 20px;
 
-      & label {
+      label {
         margin: 0 5px 0 0;
       }
     }
   }
 
-  & .left-align {
+  .left-align {
     justify-content: flex-start;
   }
 
-  & .writeup-image-container {
+  .writeup-image-container {
     display: flex;
     align-items: center;
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
       flex-direction: column-reverse;
     }
 
-
-    & .writeup {
+    .writeup {
       width: 60%;
+      @include font-block(25px, 18px, 400);
 
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         width: 100%;
       }
     }
 
-    & .image-container {
+    .image-container {
       width: 40%;
 
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         width: 70%;
       }
 
-      & > img {
+      > img {
         width: 100%;
       }
     }
-
   }
-  
-  
 }
 
 .naija-ipsum {
-  & h1 {
+  h1 {
     color: $text-header-green;
+    margin: 50px 0 10px 0;
+    @include font-block(48px, 40px, 700);
   }
 
+  p {
+    @include font-block(25px, 21px, 400);
+  }
 }
-
 
 /******************************************************* End of Paragraph-section styling *****************************************/
 
-
-
-/******************************************************* PGdiv styling *****************************************/
-#PGdiv {
-  position: relative;
-
-  #paragraphLabel {
-    @include border();
-    @include margin();
-    @include PGdiv();
-    @include padding-bg();
-    position: relative;
-    right: 15%;
-
-    .icons {
-      @include icon();
-    }
-    #paragraphText {
-      @include font-block(35px, 16px, 500);
-      width: 123px;
-      color: $text-color;
-    }
-  }
-
-  #numOfParagraphs {
-    @include PGdiv();
-    @include font-block(35px, 16px, 500);
-    color: $text-color;
-    right: 44%;
-    background: $paragraph-text;
-    border: 1px solid $paragraph-border;
-    border-radius: 100px;
-    padding: 10px 10px 10px 30px;
-    width: 550px;
-
-    // &:active {
-    //   background: $paragraph-text;
-    //   border: 1px solid $paragraph-border;
-    // }
-  }
-
-  #generateBtn {
-    @include PGdiv();
-    @include border();
-    @include margin();
-    @include font-block(35px, 16px, 500);
-    left: 59%;
-    background: $text-header-green;
-    width: 230px;
-    height: 35px;
-    text-align: center;
-    padding: 0px 35px 0px 35px;
-  }
-  #homeImg {
-    position: absolute;
-    width: 717px;
-    height: 511px;
-    left: 50%;
-    top: 457px;
-    background: url(../images/undraw_Programming_re_kg9v\ 1.png);
-  }
-}
-/** end of PGdiv styling **/
-/////////////////////////////////////////
-/************************************************** typeDiv styling ***************************************/
-#typeDiv {
-  position: relative;
-
-  #typeDivInner {
-    @include typeDiv(60px);
-    @include padding-bg();
-    @include border();
-    margin-right: 10px;
-    right: 92.5%;
-    width: 228px;
-
-    #typeText {
-      @include font-block(35px, 16px, 500);
-      color: $text-color;
-    }
-    .icons {
-      @include icon();
-    }
-  }
-
-  #pidginLabel {
-    @include typeDiv(60px);
-    @include font-block(16px, 16px, 500);
-    @include pidgin-amala-label(260px);
-    right: 79%;
-  }
-  #pidginRadioBtn {
-    @include typeDiv(70px);
-    right: 72%;
-    background: $pure-white;
-    border: 1px solid $radio-border;
-    width: 1.1rem;
-    height: 1.1rem;
-    accent-color: green;
-    &:hover {
-      @include pidgin-acthov();
-    }
-    &:active {
-      @include pidgin-acthov();
-    }
-  }
-
-  #amala-eweduLabel {
-    @include typeDiv(60px);
-    @include font-block(16px, 16px, 500);
-    @include pidgin-amala-label(260px);
-    left: 32%;
-  }
-
-  #amala-eweduRadioBtn {
-    @include typeDiv(70px);
-    left: 51%;
-    background: $pure-white;
-    border: 1px solid $radio-border;
-    width: 1.1rem;
-    height: 1.1rem;
-    accent-color: green;
-    &:hover {
-      @include pidgin-acthov();
-    }
-    &:active {
-      @include pidgin-acthov();
-    }
-  }
-}
-/** end of typeDiv styling **/
-/////////////////////////////////////////////
-/**************************************************** targetText styling *********************************************/
-#targetText {
-  position: relative;
-
-  #placeholder-container {
-    @include font-block(24px, 16px, 400);
-    @include typeDiv(100px);
-    margin-left: -165px;
-    width: 75%;
-    padding: 20px 5% 20px 0;
-    .placeholder-div {
-      margin-top: 20px;
-    }
-  }
-}
-/** end of targetText styling **/
-///////////////////////////////////////
-/*********************************************** section1 styling *****************************************************/
-.section-container {
-  position: relative;
-
-  .section1 {
-    @include typeDiv(430px);
-    margin-left: -165px;
-    width: 100%;
-    padding: 20px 0;
-
-    h1 {
-      margin-bottom: 20px;
-      @include font-block(48px, 40px, 700);
-      color: $text-header-green;
-    }
-    p {
-      @include font-block(25px, 21px, 400);
-      margin-bottom: 30px;
-    }
-  }
-
-  .section2 {
-    @include typeDiv(740px);
-    margin-left: -165px;
-    width: 100%;
-
-    padding: 20px 0;
-
-    h1 {
-      margin-bottom: 20px;
-      @include font-block(48px, 40px, 700);
-      color: $text-header-green;
-    }
-    p {
-      @include font-block(25px, 21px, 400);
-      margin-bottom: 30px;
-    }
-  }
-}
-/** end of section1 styling **/
 ///////////////////////////////////////
 /*********************************************** footer styling *********************************************/
 
@@ -471,16 +285,21 @@ footer {
   margin: 100px 0 -17px 0;
   background-color: $text-header-green;
   padding: 0 30px;
+  @include font-block(27px, 22px, 500);
 
-  & > .container {
+  @media only screen and (max-width: 500px) {
+    @include font-block(25px, 18px, 400);
+  }
+
+  .container {
     padding: 30px 0;
     display: flex;
 
-    & .get-in-touch {
+    .get-in-touch {
       width: calc(75% - 20px);
     }
 
-    & > .links-container {
+    .links-container {
       width: 25%;
       display: flex;
       flex-direction: column;
@@ -493,7 +312,6 @@ footer {
     }
   }
 }
-
 
 // .footer {
 //   position: relative;
