@@ -52,12 +52,19 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.paragraph-section .form-single-line #type {
+  text-align: center;
+  margin-right: 0.5rem;
 }
 .paragraph-section .form-single-line .text-icon-container {
   border-radius: 100px;
   border: 1px solid #e8e8e8;
-  width: 150px;
+  width: 200px;
+  text-align: right;
   padding: 5px 15px;
+  margin-right: 0.5rem;
 }
 @media (max-width: 900px) {
   .paragraph-section .form-single-line .text-icon-container {
@@ -76,7 +83,6 @@ body {
   border: 1px solid #888888;
   border-radius: 100px;
   padding: 10px 10px 10px 30px;
-  box-sizing: border-box;
   width: calc(100% - 350px);
 }
 @media (max-width: 900px) {
@@ -135,6 +141,11 @@ body {
 }
 .paragraph-section .writeup-image-container .writeup {
   width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
 }
 @media (max-width: 900px) {
   .paragraph-section .writeup-image-container .writeup {
@@ -155,294 +166,57 @@ body {
 
 .naija-ipsum h1 {
   color: #3bb431;
+  margin: 50px 0 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+.naija-ipsum p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
 }
 
 /******************************************************* End of Paragraph-section styling *****************************************/
-/******************************************************* PGdiv styling *****************************************/
-#PGdiv {
-  position: relative;
-}
-#PGdiv #paragraphLabel {
-  border-radius: 100px;
-  border: 1px solid #e8e8e8;
-  margin-top: 10px;
-  margin-right: 10px;
-  position: absolute;
-  top: 400px;
-  padding: 0px 30px 0px 100px;
-  background: #fff;
-  position: relative;
-  right: 15%;
-}
-#PGdiv #paragraphLabel .icons {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 5px;
-  left: 70px;
-}
-#PGdiv #paragraphLabel #paragraphText {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 35px;
-  width: 123px;
-  color: #292d32;
-}
-#PGdiv #numOfParagraphs {
-  position: absolute;
-  top: 400px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 35px;
-  color: #292d32;
-  right: 44%;
-  background: #efefef;
-  border: 1px solid #888888;
-  border-radius: 100px;
-  padding: 10px 10px 10px 30px;
-  width: 550px;
-}
-#PGdiv #generateBtn {
-  position: absolute;
-  top: 400px;
-  border-radius: 100px;
-  border: 1px solid #e8e8e8;
-  margin-top: 10px;
-  margin-right: 10px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 35px;
-  left: 59%;
-  background: #3bb431;
-  width: 230px;
-  height: 35px;
-  text-align: center;
-  padding: 0px 35px 0px 35px;
-}
-#PGdiv #homeImg {
-  position: absolute;
-  width: 717px;
-  height: 511px;
-  left: 50%;
-  top: 457px;
-  background: url(../images/undraw_Programming_re_kg9v\ 1.png);
-}
-
-/** end of PGdiv styling **/
-/************************************************** typeDiv styling ***************************************/
-#typeDiv {
-  position: relative;
-}
-#typeDiv #typeDivInner {
-  position: absolute;
-  top: 400px;
-  margin-top: 60px;
-  padding: 0px 30px 0px 100px;
-  background: #fff;
-  border-radius: 100px;
-  border: 1px solid #e8e8e8;
-  margin-right: 10px;
-  right: 92.5%;
-  width: 228px;
-}
-#typeDiv #typeDivInner #typeText {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 35px;
-  color: #292d32;
-}
-#typeDiv #typeDivInner .icons {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 5px;
-  left: 70px;
-}
-#typeDiv #pidginLabel {
-  position: absolute;
-  top: 400px;
-  margin-top: 60px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  background: #efefef;
-  border: 1px solid #888888;
-  border-radius: 100px;
-  padding: 10px 30px 10px 30px;
-  margin-right: -105px;
-  width: 260px;
-  right: 79%;
-}
-#typeDiv #pidginRadioBtn {
-  position: absolute;
-  top: 400px;
-  margin-top: 70px;
-  right: 72%;
-  background: #fff;
-  border: 1px solid #6b6b6b;
-  width: 1.1rem;
-  height: 1.1rem;
-  accent-color: green;
-}
-#typeDiv #pidginRadioBtn:hover {
-  color: #3bb431;
-  accent-color: #3bb431;
-  border: 1px solid #6b6b6b;
-}
-#typeDiv #pidginRadioBtn:active {
-  color: #3bb431;
-  accent-color: #3bb431;
-  border: 1px solid #6b6b6b;
-}
-#typeDiv #amala-eweduLabel {
-  position: absolute;
-  top: 400px;
-  margin-top: 60px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  background: #efefef;
-  border: 1px solid #888888;
-  border-radius: 100px;
-  padding: 10px 30px 10px 30px;
-  margin-right: -105px;
-  width: 260px;
-  left: 32%;
-}
-#typeDiv #amala-eweduRadioBtn {
-  position: absolute;
-  top: 400px;
-  margin-top: 70px;
-  left: 51%;
-  background: #fff;
-  border: 1px solid #6b6b6b;
-  width: 1.1rem;
-  height: 1.1rem;
-  accent-color: green;
-}
-#typeDiv #amala-eweduRadioBtn:hover {
-  color: #3bb431;
-  accent-color: #3bb431;
-  border: 1px solid #6b6b6b;
-}
-#typeDiv #amala-eweduRadioBtn:active {
-  color: #3bb431;
-  accent-color: #3bb431;
-  border: 1px solid #6b6b6b;
-}
-
-/** end of typeDiv styling **/
-/**************************************************** targetText styling *********************************************/
-#targetText {
-  position: relative;
-}
-#targetText #placeholder-container {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  position: absolute;
-  top: 400px;
-  margin-top: 100px;
-  margin-left: -165px;
-  width: 75%;
-  padding: 20px 5% 20px 0;
-}
-#targetText #placeholder-container .placeholder-div {
-  margin-top: 20px;
-}
-
-/** end of targetText styling **/
-/*********************************************** section1 styling *****************************************************/
-.section-container {
-  position: relative;
-}
-.section-container .section1 {
-  position: absolute;
-  top: 400px;
-  margin-top: 430px;
-  margin-left: -165px;
-  width: 100%;
-  padding: 20px 0;
-}
-.section-container .section1 h1 {
-  margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  color: #3bb431;
-}
-.section-container .section1 p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 25px;
-  margin-bottom: 30px;
-}
-.section-container .section2 {
-  position: absolute;
-  top: 400px;
-  margin-top: 740px;
-  margin-left: -165px;
-  width: 100%;
-  padding: 20px 0;
-}
-.section-container .section2 h1 {
-  margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  color: #3bb431;
-}
-.section-container .section2 p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 25px;
-  margin-bottom: 30px;
-}
-
-/** end of section1 styling **/
 /*********************************************** footer styling *********************************************/
 footer {
   color: #fff;
   margin: 100px 0 -17px 0;
   background-color: #3bb431;
   padding: 0 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
 }
-footer > .container {
+@media only screen and (max-width: 500px) {
+  footer {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+footer .container {
   padding: 30px 0;
   display: flex;
 }
-footer > .container .get-in-touch {
+footer .container .get-in-touch {
   width: calc(75% - 20px);
 }
-footer > .container > .links-container {
+footer .container .links-container {
   width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-footer > .container > .links-container a {
+footer .container .links-container a {
   color: white;
   text-align: center;
 }
