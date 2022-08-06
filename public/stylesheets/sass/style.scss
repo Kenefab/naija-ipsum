@@ -93,20 +93,10 @@ body {
   margin: 0;
 }
 
-// #parent {
-//   position: relative;
-//   #child {
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
 /** end of base styles **/
 ////////////////////////////////////
-/*************************************** navbar styling *******************************************/
 
+/*************************************** navbar styling *******************************************/
 #nav-link {
   width: 100%;
 }
@@ -153,8 +143,20 @@ body {
 /** end of navbar styling **/
 ///////////////////////////////////////////////////
 
-/******************************************************* Paragraph-section styling *****************************************/
+h1 {
+  @include font-block(36px, 30px, 500);
+  color: $text-header-green;
 
+  @media only screen and (max-width: 900px) {
+    @include font-block(35px, 28px, 500);
+  }
+
+  @media only screen and (max-width: 500px) {
+    @include font-block(18px, 15px, 500);
+  }
+}
+
+/******************************************************* Paragraph-section styling *****************************************/
 .paragraph-section {
   .form-single-line {
     display: flex;
@@ -192,6 +194,7 @@ body {
       border-radius: 100px;
       padding: 10px 10px 10px 30px;
       width: calc(100% - (200px + 150px));
+
       @media (max-width: 900px) {
         padding: 4px 4px 4px 10px;
         height: 40px;
@@ -242,10 +245,15 @@ body {
 
     .writeup {
       width: 60%;
-      @include font-block(25px, 18px, 400);
+      @include font-block(30px, 20px, 400);
 
-      @media (max-width: 900px) {
+      @media only screen and (max-width: 900px) {
         width: 100%;
+        @include font-block(30px, 20px, 400);
+      }
+
+      @media only screen and (max-width: 500px) {
+        @include font-block(12px, 10px, 400);
       }
     }
 
@@ -269,16 +277,25 @@ body {
     margin: 50px 0 10px 0;
     @include font-block(50px, 40px, 700);
 
+    @media only screen and (max-width: 900px) {
+      @include font-block(40px, 30px, 700);
+    }
+
     @media only screen and (max-width: 500px) {
-      @include font-block(35px, 30px, 700);
+      @include font-block(18px, 15px, 700);
     }
   }
 
   p {
     margin-top: 17px;
     @include font-block(30px, 21px, 400);
-    @media only screen and (max-width: 500px) {
+
+    @media only screen and (max-width: 900px) {
       @include font-block(30px, 20px, 400);
+    }
+
+    @media only screen and (max-width: 500px) {
+      @include font-block(12px, 10px, 400);
     }
   }
 }
@@ -295,8 +312,12 @@ footer {
   padding: 0 30px;
   @include font-block(27px, 22px, 500);
 
+  @media only screen and (max-width: 900px) {
+    @include font-block(30px, 20px, 400);
+  }
+
   @media only screen and (max-width: 500px) {
-    @include font-block(25px, 18px, 400);
+    @include font-block(12px, 10px, 400);
   }
 
   .container {
@@ -316,6 +337,17 @@ footer {
       a {
         color: white;
         text-align: center;
+        padding-left: 70%;
+
+        @include font-block(30px, 21px, 400);
+
+        @media only screen and (max-width: 900px) {
+          @include font-block(30px, 20px, 400);
+        }
+
+        @media only screen and (max-width: 500px) {
+          @include font-block(12px, 10px, 400);
+        }
       }
     }
   }

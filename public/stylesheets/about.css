@@ -46,7 +46,7 @@ body {
 }
 
 /** end of navbar styling **/
-/** h3 and p general styling **/
+/** h3, p and a general styling **/
 h3 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -126,7 +126,7 @@ a {
   }
 }
 
-/** end of h3 and p styling **/
+/** end of h3, p and a styling **/
 /** first-writeup div styling **/
 .first-writeup {
   margin-top: 1rem;
@@ -252,6 +252,7 @@ a {
 @media only screen and (max-width: 900px) {
   .second-writeup-image .writeups #writeup-three {
     margin-top: 3rem;
+    margin-left: -110%;
     width: 160%;
   }
 }
@@ -265,7 +266,6 @@ a {
 /** footer styling **/
 footer {
   margin-top: 20px;
-  overflow: hidden;
   color: #fff;
   margin: 100px 0 -17px 0;
   background-color: #3bb431;
@@ -302,6 +302,7 @@ footer .container .links-container {
 footer .container .links-container a {
   color: white;
   text-align: center;
+  padding-left: 70%;
 }
 
 /** end of footer styling **/
