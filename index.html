@@ -59,18 +59,25 @@
     <div class="container">
       <!--------------------------------------- paragraph section ---------------------------------------->
       <section class="paragraph-section">
-        <form action="">
+        <form class="naija-ipsum-form">
           <div class="form-single-line">
             <div class="text-icon-container">
               <img src="./icons/message-edit.svg" alt="paragraph-icon" />
               <span>Paragraphs:</span>
             </div>
-            <input type="number" name="numOfParagraphs" />
+            <input
+              type="number"
+              name="numOfParagraphs"
+              min="1"
+              max="10"
+              placeholder="how many wey you want?"
+              id="num-of-para"
+            />
             <input type="submit" value="Generate" />
           </div>
 
-          <div class="form-single-line left-align">
-            <div class="text-icon-container" id="type">
+          <!-- <div class="form-single-line left-align">
+            <div class="text-icon-container" id="type">////////////////////would work on type soon
               <img src="./icons/task.svg" alt="paragraph-icon" />
               <span>Type:</span>
             </div>
@@ -84,31 +91,12 @@
               <label for="AmalaEwedu">Amala&Ewedu</label>
               <input type="radio" name="AmalaEwedu" />
             </div>
-          </div>
+          </div> -->
         </form>
 
         <div class="writeup-image-container">
-          <div class="writeup">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              necessitatibus iusto porro quis illo cum eos quaerat modi in,
-              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
-              unde maiores aliquam et!
-            </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              necessitatibus iusto porro quis illo cum eos quaerat modi in,
-              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
-              unde maiores aliquam et!
-            </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              necessitatibus iusto porro quis illo cum eos quaerat modi in,
-              pariatur magnam distinctio aliquid voluptatum maxime dignissimos
-              unde maiores aliquam et!
-            </p>
-          </div>
-          <div class="image-container">
+          <div class="writeup"></div>
+          <div class="image-container image-container-alone">
             <img src="./images/man-on-desk.png" alt="desk" />
           </div>
         </div>
@@ -160,6 +148,8 @@
     <!-- end of child div -->
     <!-- </div> -->
     <!-- end of parent div -->
+
+    <script src="./generator.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

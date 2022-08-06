@@ -1,4 +1,3 @@
-/***************************************************** Sammy use the SASS stylesheet. Don't style on the css. Read README file. ****************************************************/
 /************************************************* base styles ***************************************/
 * {
   margin: 0px;
@@ -195,6 +194,7 @@ h1 {
 }
 .paragraph-section .writeup-image-container .image-container {
   width: 40%;
+  margin-left: -45%;
 }
 @media (max-width: 900px) {
   .paragraph-section .writeup-image-container .image-container {
