@@ -83,7 +83,7 @@ body {
 /** end of navbar styling **/
 ////////////////////////////////////
 
-/** h3 and p general styling **/
+/** h3, p and a general styling **/
 h3 {
   @include font-block(36px, 30px, 500);
   color: $text-header-green;
@@ -120,7 +120,7 @@ a {
     @include font-block(12px, 10px, 400);
   }
 }
-/** end of h3 and p styling **/
+/** end of h3, p and a styling **/
 ////////////////////////////////////
 
 /** first-writeup div styling **/
@@ -227,6 +227,7 @@ a {
 
       @media only screen and (max-width: 900px) {
         margin-top: 3rem;
+        margin-left: -110%;
         width: 160%;
       }
 
@@ -241,7 +242,6 @@ a {
 /** footer styling **/
 footer {
   margin-top: 20px;
-  overflow: hidden;
   color: $pure-white;
   margin: 100px 0 -17px 0;
   background-color: $text-header-green;
@@ -270,6 +270,7 @@ footer {
       a {
         color: white;
         text-align: center;
+        padding-left: 70%;
       }
     }
   }

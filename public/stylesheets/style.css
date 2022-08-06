@@ -46,6 +46,33 @@ body {
 }
 
 /** end of navbar styling **/
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #3bb431;
+}
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
 /******************************************************* Paragraph-section styling *****************************************/
 .paragraph-section .form-single-line {
   display: flex;
@@ -144,12 +171,26 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 30px;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .paragraph-section .writeup-image-container .writeup {
     width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .paragraph-section .writeup-image-container .writeup {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 .paragraph-section .writeup-image-container .image-container {
@@ -173,13 +214,22 @@ body {
   font-size: 40px;
   line-height: 50px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
   .naija-ipsum h1 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .naija-ipsum h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
   }
 }
 .naija-ipsum p {
@@ -190,13 +240,22 @@ body {
   font-size: 21px;
   line-height: 30px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
   .naija-ipsum p {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .naija-ipsum p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 
@@ -213,13 +272,22 @@ footer {
   font-size: 22px;
   line-height: 27px;
 }
+@media only screen and (max-width: 900px) {
+  footer {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 @media only screen and (max-width: 500px) {
   footer {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 footer .container {
@@ -238,6 +306,30 @@ footer .container .links-container {
 footer .container .links-container a {
   color: white;
   text-align: center;
+  padding-left: 70%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 900px) {
+  footer .container .links-container a {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  footer .container .links-container a {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
