@@ -45,4 +45,265 @@ body {
   width: 100%;
 }
 
+/** end of navbar styling **/
+/** h3 and p general styling **/
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #3bb431;
+}
+@media only screen and (max-width: 900px) {
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 900px) {
+  p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 900px) {
+  a {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  a {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+/** end of h3 and p styling **/
+/** first-writeup div styling **/
+.first-writeup {
+  margin-top: 1rem;
+  width: 100%;
+}
+.first-writeup h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #3bb431;
+}
+@media only screen and (max-width: 900px) {
+  .first-writeup h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .first-writeup h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+.first-writeup p {
+  margin-top: 17px;
+}
+
+/** end of first-writeup div styling **/
+.second-writeup-image {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+}
+@media only screen and (max-width: 900px) {
+  .second-writeup-image {
+    margin-top: 9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .second-writeup-image {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .second-writeup-image {
+    margin-top: 4rem;
+  }
+}
+.second-writeup-image #image-wrap {
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .second-writeup-image #image-wrap {
+    margin-top: 1rem;
+    margin-right: 5.5rem;
+  }
+}
+.second-writeup-image #image-wrap img {
+  width: 100%;
+}
+.second-writeup-image .writeups {
+  width: 100%;
+}
+.second-writeup-image .writeups #writeup-one {
+  min-width: 106%;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 900px) {
+  .second-writeup-image .writeups #writeup-one {
+    margin-top: -30%;
+    margin-left: -85%;
+    min-width: 160%;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 501px) {
+  .second-writeup-image .writeups #writeup-one {
+    margin-top: -57%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .second-writeup-image .writeups #writeup-one {
+    margin-top: -20%;
+    margin-left: -100%;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .second-writeup-image .writeups #writeup-one {
+    margin-top: -40%;
+  }
+}
+.second-writeup-image .writeups #writeup-two {
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: -7rem;
+}
+@media only screen and (max-width: 900px) {
+  .second-writeup-image .writeups #writeup-two {
+    margin-top: 45%;
+    margin-left: -85%;
+    width: 160%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .second-writeup-image .writeups #writeup-two {
+    margin-top: 45%;
+    margin-left: -75%;
+  }
+}
+.second-writeup-image .writeups #writeup-three {
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: -15rem;
+  padding-top: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .second-writeup-image .writeups #writeup-three {
+    margin-top: 3rem;
+    width: 160%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .second-writeup-image .writeups #writeup-three {
+    margin-top: 3%;
+    margin-left: -100%;
+  }
+}
+
+/** footer styling **/
+footer {
+  margin-top: 20px;
+  overflow: hidden;
+  color: #fff;
+  margin: 100px 0 -17px 0;
+  background-color: #3bb431;
+  padding: 0 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+}
+@media only screen and (max-width: 500px) {
+  footer {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+}
+footer .container {
+  padding: 30px 0;
+  display: flex;
+}
+footer .container .get-in-touch {
+  width: calc(75% - 20px);
+}
+footer .container .links-container {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .container .links-container a {
+  color: white;
+  text-align: center;
+}
+
+/** end of footer styling **/
+
 /*# sourceMappingURL=about.css.map */

@@ -171,14 +171,33 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 50px;
+}
+@media only screen and (max-width: 500px) {
+  .naija-ipsum h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 .naija-ipsum p {
+  margin-top: 17px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .naija-ipsum p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /******************************************************* End of Paragraph-section styling *****************************************/
