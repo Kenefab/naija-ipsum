@@ -83,22 +83,45 @@ body {
 /** end of navbar styling **/
 ////////////////////////////////////
 
+/** h3 and p general styling **/
 h3 {
   @include font-block(36px, 30px, 500);
   color: $text-header-green;
 
+  @media only screen and (max-width: 900px) {
+    @include font-block(35px, 28px, 500);
+  }
+
   @media only screen and (max-width: 500px) {
-    @include font-block(30px, 28px, 500);
+    @include font-block(18px, 15px, 500);
   }
 }
 
 p {
   @include font-block(30px, 21px, 400);
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 900px) {
     @include font-block(30px, 20px, 400);
   }
+
+  @media only screen and (max-width: 500px) {
+    @include font-block(12px, 10px, 400);
+  }
 }
+
+a {
+  @include font-block(30px, 21px, 400);
+
+  @media only screen and (max-width: 900px) {
+    @include font-block(30px, 20px, 400);
+  }
+
+  @media only screen and (max-width: 500px) {
+    @include font-block(12px, 10px, 400);
+  }
+}
+/** end of h3 and p styling **/
+////////////////////////////////////
 
 /** first-writeup div styling **/
 .first-writeup {
@@ -108,8 +131,12 @@ p {
     @include font-block(50px, 40px, 700);
     color: $text-header-green;
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 900px) {
       @include font-block(40px, 30px, 700);
+    }
+
+    @media only screen and (max-width: 500px) {
+      @include font-block(18px, 15px, 700);
     }
   }
 
@@ -124,10 +151,24 @@ p {
   margin-top: 3rem;
   width: 100%;
   display: flex;
-  position: relative;
+
+  @media only screen and (max-width: 900px) {
+    margin-top: 9rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin-top: 3rem;
+  }
+  @media only screen and (max-width: 411px) {
+    margin-top: 4rem;
+  }
 
   #image-wrap {
     width: 100%;
+    @media only screen and (max-width: 900px) {
+      margin-top: 1rem;
+      margin-right: 5.5rem;
+    }
 
     img {
       width: 100%;
@@ -138,14 +179,44 @@ p {
     width: 100%;
 
     #writeup-one {
-      width: 106%;
+      min-width: 106%;
       margin-top: 4rem;
+
+      @media only screen and (max-width: 900px) {
+        margin-top: -30%;
+        margin-left: -85%;
+        min-width: 160%;
+      }
+
+      @media only screen and (max-width: 767px) and (min-width: 501px) {
+        margin-top: -57%;
+      }
+
+      @media only screen and (max-width: 500px) {
+        margin-top: -20%;
+        margin-left: -100%;
+      }
+
+      @media only screen and (max-width: 410px) {
+        margin-top: -40%;
+      }
     }
 
     #writeup-two {
       width: 100%;
       margin-top: 3rem;
       margin-left: -7rem;
+
+      @media only screen and (max-width: 900px) {
+        margin-top: 45%;
+        margin-left: -85%;
+        width: 160%;
+      }
+
+      @media only screen and (max-width: 500px) {
+        margin-top: 45%;
+        margin-left: -75%;
+      }
     }
 
     #writeup-three {
@@ -153,6 +224,16 @@ p {
       margin-top: 3rem;
       margin-left: -15rem;
       padding-top: 1rem;
+
+      @media only screen and (max-width: 900px) {
+        margin-top: 3rem;
+        width: 160%;
+      }
+
+      @media only screen and (max-width: 500px) {
+        margin-top: 3%;
+        margin-left: -100%;
+      }
     }
   }
 }
@@ -169,6 +250,7 @@ footer {
 
   @media only screen and (max-width: 500px) {
     @include font-block(25px, 18px, 400);
+    margin-top: 10px;
   }
 
   .container {
