@@ -119,7 +119,8 @@ h1 {
     margin-left: -10px;
   }
 }
-.paragraph-section .form-single-line input[type=submit] {
+.paragraph-section .form-single-line input[type=submit],
+.paragraph-section .form-single-line .bubbly-button {
   border-radius: 100px;
   border: 1px solid #e8e8e8;
   font-family: "Poppins", sans-serif;
@@ -131,9 +132,58 @@ h1 {
   height: 35px;
   text-align: center;
   padding: 0px 50px;
+  margin-left: 1rem;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(2, 250, 43, 0.5);
+}
+.paragraph-section .form-single-line input[type=submit]:focus,
+.paragraph-section .form-single-line .bubbly-button:focus {
+  outline: 0;
+}
+.paragraph-section .form-single-line input[type=submit]:before, .paragraph-section .form-single-line input[type=submit]:after,
+.paragraph-section .form-single-line .bubbly-button:before,
+.paragraph-section .form-single-line .bubbly-button:after {
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.paragraph-section .form-single-line input[type=submit]:before,
+.paragraph-section .form-single-line .bubbly-button:before {
+  display: none;
+  top: -75%;
+}
+.paragraph-section .form-single-line input[type=submit]:after,
+.paragraph-section .form-single-line .bubbly-button:after {
+  display: none;
+  bottom: -75%;
+}
+.paragraph-section .form-single-line input[type=submit]:active,
+.paragraph-section .form-single-line .bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #34a02c;
+  box-shadow: 0 2px 25px rgba(250, 2, 2, 0.5);
+}
+.paragraph-section .form-single-line input[type=submit].animate:before,
+.paragraph-section .form-single-line .bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.paragraph-section .form-single-line input[type=submit].animate:after,
+.paragraph-section .form-single-line .bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
 }
 @media (max-width: 900px) {
-  .paragraph-section .form-single-line input[type=submit] {
+  .paragraph-section .form-single-line input[type=submit],
+.paragraph-section .form-single-line .bubbly-button {
     padding: 0px 25px;
   }
 }
