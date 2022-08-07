@@ -254,6 +254,7 @@ h1 {
 @media (max-width: 900px) {
   .paragraph-section .writeup-image-container .image-container {
     width: 70%;
+    margin: 0;
   }
 }
 .paragraph-section .writeup-image-container .image-container > img {
