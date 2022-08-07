@@ -8,6 +8,8 @@ $text-color: #292d32;
 $text-header-green: #3bb431;
 $radio-border: #6b6b6b;
 
+$button-bg: #3bb431;
+
 ////////////////////////////////
 /////////////////////////////////////////////////////fonts
 $nav-font: "IM FELL DW Pica";
@@ -192,13 +194,59 @@ h1 {
       }
     }
 
-    input[type="submit"] {
+    input[type="submit"],
+    .bubbly-button {
       @include border();
       @include font-block(35px, 16px, 500);
       background: $text-header-green;
       height: 35px;
       text-align: center;
       padding: 0px 50px;
+      margin-left: 1rem;
+      ///////////////////////////////////////////////////animation starts here
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+      box-shadow: 0 2px 25px rgba(2, 250, 43, 0.5);
+
+      &:focus {
+        outline: 0;
+      }
+      &:before,
+      &:after {
+        width: 140%;
+        height: 100%;
+        left: -20%;
+        z-index: -1000;
+        transition: all ease-in-out 0.5s;
+        background-repeat: no-repeat;
+      }
+      &:before {
+        display: none;
+        top: -75%;
+      }
+      &:after {
+        display: none;
+        bottom: -75%;
+      }
+      &:active {
+        transform: scale(0.9);
+        background-color: darken($button-bg, 5%);
+        box-shadow: 0 2px 25px rgba(250, 2, 2, 0.5);
+      }
+      &.animate {
+        &:before {
+          display: block;
+          animation: topBubbles ease-in-out 0.75s forwards;
+        }
+        &:after {
+          display: block;
+          animation: bottomBubbles ease-in-out 0.75s forwards;
+        }
+      } ////////////////////////////////////////////////////////////animation ends here
 
       @media (max-width: 900px) {
         padding: 0px 25px;
