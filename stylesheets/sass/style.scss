@@ -8,46 +8,15 @@ $text-color: #292d32;
 $text-header-green: #3bb431;
 $radio-border: #6b6b6b;
 
-$button-bg: #3bb431;
-
 ////////////////////////////////
 /////////////////////////////////////////////////////fonts
 $nav-font: "IM FELL DW Pica";
 $PGdiv-font: "Poppins", sans-serif;
 ////////////////////////////
 /////////////////////////////////////////////////////mixins
-@mixin PGdiv {
-  position: absolute;
-  top: 400px;
-}
-
 @mixin border {
   border-radius: 100px;
   border: 1px solid $border-white;
-}
-
-@mixin margin {
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-@mixin navbar {
-  font-style: normal;
-  font-family: $nav-font;
-  font-weight: 400;
-  font-size: 91px;
-  line-height: 114px;
-}
-
-@mixin typeDiv($margin-top) {
-  position: absolute;
-  top: 400px;
-  margin-top: $margin-top;
-}
-
-@mixin padding-bg {
-  padding: 0px 30px 0px 100px;
-  background: $pure-white;
 }
 
 @mixin font-block($line-height, $font-size, $font-weight) {
@@ -57,30 +26,8 @@ $PGdiv-font: "Poppins", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
 }
-
-@mixin icon {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 5px;
-  left: 70px;
-}
-
-@mixin pidgin-amala-label($width) {
-  background: $paragraph-text;
-  border: 1px solid $paragraph-border;
-  border-radius: 100px;
-  padding: 10px 30px 10px 30px;
-  margin-right: -105px;
-  width: $width;
-}
-
-@mixin pidgin-acthov {
-  color: $text-header-green;
-  accent-color: $text-header-green;
-  border: 1px solid $radio-border;
-}
 ///////////////////////////////////////
+
 /************************************************* base styles ***************************************/
 * {
   margin: 0px;
@@ -192,6 +139,12 @@ h1 {
         width: calc(100% - 280px);
         margin-left: -10px;
       }
+
+      @media only screen and (max-width: 767px) {
+        &::placeholder {
+          color: transparent;
+        }
+      }
     }
 
     input[type="submit"],
@@ -210,7 +163,7 @@ h1 {
       border: none;
       cursor: pointer;
       transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-      box-shadow: 0 2px 25px rgba(2, 250, 43, 0.5);
+      box-shadow: 0 2px 25px rgba(202, 228, 207, 0.5);
 
       &:focus {
         outline: 0;
@@ -234,7 +187,7 @@ h1 {
       }
       &:active {
         transform: scale(0.9);
-        background-color: darken($button-bg, 5%);
+        background-color: darken($text-header-green, 5%);
         box-shadow: 0 2px 25px rgba(0, 204, 68, 0.5);
       }
       &.animate {
@@ -281,6 +234,7 @@ h1 {
     }
 
     .writeup {
+      ///////////////////////////////////////////generated naija-ipsum
       width: 60%;
       @include font-block(30px, 20px, 400);
 
@@ -290,7 +244,7 @@ h1 {
       }
 
       @media only screen and (max-width: 500px) {
-        @include font-block(12px, 10px, 400);
+        @include font-block(16px, 11px, 400);
       }
     }
 
@@ -313,7 +267,7 @@ h1 {
 .naija-ipsum {
   h1 {
     color: $text-header-green;
-    margin: 50px 0 10px 0;
+    margin: 40px 0 10px 0;
     @include font-block(50px, 40px, 700);
 
     @media only screen and (max-width: 900px) {
@@ -326,7 +280,7 @@ h1 {
   }
 
   p {
-    margin-top: 17px;
+    margin-top: 10px;
     @include font-block(30px, 21px, 400);
 
     @media only screen and (max-width: 900px) {
@@ -334,7 +288,7 @@ h1 {
     }
 
     @media only screen and (max-width: 500px) {
-      @include font-block(12px, 10px, 400);
+      @include font-block(16px, 11px, 400);
     }
   }
 }
@@ -356,7 +310,7 @@ footer {
   }
 
   @media only screen and (max-width: 500px) {
-    @include font-block(12px, 10px, 400);
+    @include font-block(16px, 11px, 400);
   }
 
   .container {
@@ -385,7 +339,7 @@ footer {
         }
 
         @media only screen and (max-width: 500px) {
-          @include font-block(12px, 10px, 400);
+          @include font-block(16px, 11px, 400);
         }
       }
     }

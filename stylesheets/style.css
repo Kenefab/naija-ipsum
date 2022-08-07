@@ -119,6 +119,11 @@ h1 {
     margin-left: -10px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .paragraph-section .form-single-line input[type=number]::placeholder {
+    color: transparent;
+  }
+}
 .paragraph-section .form-single-line input[type=submit],
 .paragraph-section .form-single-line .bubbly-button {
   border-radius: 100px;
@@ -139,7 +144,7 @@ h1 {
   border: none;
   cursor: pointer;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(2, 250, 43, 0.5);
+  box-shadow: 0 2px 25px rgba(202, 228, 207, 0.5);
 }
 .paragraph-section .form-single-line input[type=submit]:focus,
 .paragraph-section .form-single-line .bubbly-button:focus {
@@ -169,7 +174,7 @@ h1 {
 .paragraph-section .form-single-line .bubbly-button:active {
   transform: scale(0.9);
   background-color: #34a02c;
-  box-shadow: 0 2px 25px rgba(0, 183, 255, 0.5);
+  box-shadow: 0 2px 25px rgba(0, 204, 68, 0.5);
 }
 .paragraph-section .form-single-line input[type=submit].animate:before,
 .paragraph-section .form-single-line .bubbly-button.animate:before {
@@ -238,8 +243,8 @@ h1 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 .paragraph-section .writeup-image-container .image-container {
@@ -257,7 +262,7 @@ h1 {
 
 .naija-ipsum h1 {
   color: #3bb431;
-  margin: 50px 0 10px 0;
+  margin: 40px 0 10px 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -283,7 +288,7 @@ h1 {
   }
 }
 .naija-ipsum p {
-  margin-top: 17px;
+  margin-top: 10px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -304,8 +309,8 @@ h1 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 
@@ -336,8 +341,8 @@ footer {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 footer .container {
@@ -377,8 +382,8 @@ footer .container .links-container a {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 

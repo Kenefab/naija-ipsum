@@ -1,3 +1,4 @@
+// Naija Ipsum array/text
 const naijaIpsum = [
   `I'm baby intelligentsia hot chicken iPhone, letterpress food truck lomo roof party celiac +1 photo booth yr thundercats affogato. Poke pork belly PBR&B, vape fashion axe hashtag chillwave brooklyn cloud bread marfa cold-pressed adaptogen. Ennui tilde fam, chicharrones irony you probably haven't heard of them raclette poutine. Intelligentsia seitan chicharrones, enamel pin brunch vaporware art party kitsch retro. Vegan sustainable tumeric cronut. Pug aesthetic PBR&B glossier selvage, art party salvia wayfarers. Etsy taiyaki typewriter chicharrones, taxidermy cold-pressed pabst vinyl cronut pok pok 8-bit fam.`,
   `Activated charcoal direct trade palo santo vape everyday carry pork belly mustache kitsch gochujang. Vexillologist shoreditch deep v, keytar ethical seitan sartorial kale chips irony tumeric microdosing brunch. Keffiyeh master cleanse next level, glossier lumbersexual shaman af edison bulb distillery knausgaard vape small batch portland. Cred truffaut vape deep v +1, gastropub hot chicken raw denim helvetica umami offal.`,
@@ -11,22 +12,26 @@ const naijaIpsum = [
   `Tilde twee af drinking vinegar trust fund. Ramps vaporware hell of kombucha 8-bit chambray YOLO wolf vinyl pop-up cornhole activated charcoal mixtape. Mixtape marfa before they sold out XOXO poutine craft beer scenester cronut drinking vinegar knausgaard you probably haven't heard of them hella. Literally selvage mumblecore activated charcoal echo park vegan deep v fingerstache irony kogi microdosing trust fund. Schlitz cloud bread activated charcoal, master cleanse kitsch shoreditch umami bicycle rights la croix post-ironic biodiesel edison bulb. 8-bit disrupt banjo selvage. Flannel selfies organic put a bird on it keytar, lo-fi health goth umami fam four loko kombucha adaptogen hammock austin tilde.`,
 ];
 
+//selecting html elements
 const naijaIpsumForm = document.querySelector(".naija-ipsum-form");
 const numOfPara = document.getElementById("num-of-para");
 const naijaIpsumResult = document.querySelector(".writeup");
 
+//generate button event listener
 naijaIpsumForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+  e.preventDefault(); //prevents button default behavior (stops reloading of screen)
   moveImageRight = document.querySelector(".image-container").style.margin =
-    "0";
+    "0"; /////////////moves picture to the right of the screen
 
-  const value = parseInt(numOfPara.value);
-  const random = Math.floor(Math.random() * naijaIpsum.length);
+  const value = parseInt(numOfPara.value); /////parses value (string) to integer
+  const random = Math.floor(Math.random() * naijaIpsum.length); // randamly generated naija ipsum
 
   if (isNaN(value)) {
-    naijaIpsumResult.innerHTML = `<p>${naijaIpsum[random]}</p>`;
+    naijaIpsumResult.innerHTML = `<p>${naijaIpsum[random]}</p>`; /// checks if value is empty
   } else {
-    let tempIpsum = naijaIpsum.slice(0, value);
+    let tempIpsum = naijaIpsum.slice(0, value); /// slices array. from the start to the length of array
+
+    // maps the selected item from the sliced array and displays the naijaIpsumResult
     tempIpsum = tempIpsum
       .map((item) => {
         return `<p>${item}</p>`;
