@@ -169,7 +169,7 @@ h1 {
 .paragraph-section .form-single-line .bubbly-button:active {
   transform: scale(0.9);
   background-color: #34a02c;
-  box-shadow: 0 2px 25px rgba(250, 2, 2, 0.5);
+  box-shadow: 0 2px 25px rgba(0, 204, 68, 0.5);
 }
 .paragraph-section .form-single-line input[type=submit].animate:before,
 .paragraph-section .form-single-line .bubbly-button.animate:before {

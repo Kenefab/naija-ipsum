@@ -8,8 +8,6 @@ $text-color: #292d32;
 $text-header-green: #3bb431;
 $radio-border: #6b6b6b;
 
-$button-bg: #3bb431;
-
 ////////////////////////////////
 /////////////////////////////////////////////////////fonts
 $nav-font: "IM FELL DW Pica";
@@ -234,8 +232,8 @@ h1 {
       }
       &:active {
         transform: scale(0.9);
-        background-color: darken($button-bg, 5%);
-        box-shadow: 0 2px 25px rgba(250, 2, 2, 0.5);
+        background-color: darken($text-header-green, 5%);
+        box-shadow: 0 2px 25px rgba(0, 204, 68, 0.5);
       }
       &.animate {
         &:before {
